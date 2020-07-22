@@ -1,0 +1,12 @@
+<odoo>
+
+    <!-- ========== FOOTER ========== -->
+    <template id="agency_bottom_footer" inherit_id="portal.frontend_layout">
+        <xpath expr="//footer" position="replace">
+            <section>
+
+            </section>
+        </xpath>
+    </template>
+
+</odoo>

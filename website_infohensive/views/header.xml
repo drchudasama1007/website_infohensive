@@ -1,0 +1,9 @@
+<odoo>
+
+    <!-- ========== HEADER ========== -->
+    <template id="agency_top_header" inherit_id="portal.frontend_layout">
+        <xpath expr="//header" position="replace">
+
+        </xpath>
+    </template>
+</odoo>
