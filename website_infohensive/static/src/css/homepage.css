@@ -1,6 +1,6 @@
 /* ---------container set css--------- */
 
-.container{
+.footer.container, .header.container, .blog.container{
     max-width: 940px !important;
 }
 
@@ -64,16 +64,6 @@
     text-decoration: none;
 }
 
-.bg-home{
-    background-image: url('/website_infohensive/static/src/img/home_background.jpg');
-    background-repeat: no-repeat;
-    background-size: 60% 100%;
-    background-position: 79% 20%;
-}
-
-.bg-shadow{
-    box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);
-}
 
 
 
