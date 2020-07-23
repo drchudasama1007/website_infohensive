@@ -1,0 +1,36 @@
+<odoo>
+
+    <!-- ========== HOME PAGE ========== -->
+    <template id="home_template" name="Home Page">
+        <t t-call="website.layout">
+		<div class="container-fluid">
+            <div class="row bg-home">
+                <div class="col-md-4 offset-md-1 pb64">
+                    <h1 class="pt72">Framework</h1>
+                    <p class="pt8 font-weight-bold mb0">A Simple, powerfull and comprehensiv approach to</p>
+                    <p class="font-weight-bold mt0">information security.</p>
+                    <h1 class="pt32">ERP Platform</h1>
+                    <p class="pt8 font-weight-bold mb0">A highly customisable and easy to use ERP for</p>
+                    <p class="font-weight-bold mt0 mb0">implementing Information Security Controls baked into all</p>
+                    <p class="font-weight-bold mt0">parts of the business.</p>
+                    <button class="btn btn-success">Framework</button>
+                    <button class="btn btn-primary ml-3">ERP Platform</button>
+                </div>
+            </div>
+        </div>
+            <section class="bg-shadow">
+                <div class="container">
+                    <div class="row pb32">
+                <div class="col-md-12 text-center">
+                    <h1 class="pt32 mb0">A Comprehensive Solution to</h1>
+                    <h1 class="mt0">Information Security.</h1>
+                    <p class="pt8 font-weight-bold mb0">Information Security isn't just about treating a certain area of business but</p>
+                    <p class="font-weight-bold mt0">improving the health of the whole entily.</p>
+                </div>
+            </div>
+                </div>
+            </section>
+
+	</t>
+    </template>
+</odoo>

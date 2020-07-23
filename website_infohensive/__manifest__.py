@@ -10,6 +10,7 @@
         'views/assets.xml',
         'views/header.xml',
         'views/footer.xml',
+	'views/homepage.xml',
         'views/blog.xml',
     ],
     'application': True,
