@@ -4,6 +4,7 @@
         <xpath expr="." position="inside">
             <!-- CSS Implementing Plugins -->
             <link href="/website_infohensive/static/src/css/homepage.css" rel="stylesheet"/>
+            <link href="/website_infohensive/static/src/css/blog.css" rel="stylesheet"/>
         </xpath>
     </template>
 </odoo>
