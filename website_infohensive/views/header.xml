@@ -3,7 +3,31 @@
     <!-- ========== HEADER ========== -->
     <template id="agency_top_header" inherit_id="portal.frontend_layout">
         <xpath expr="//header" position="replace">
-
+            <section class="header">
+                <div class="col-md-12 col-sm-12 top-menu col-sm-12 container text-right pt8 pb8">
+                    <a type="button" href="/contactus" class="btn">Contact us</a>
+                    <i class="fa fa-linkedin ml-2"/>
+                    <i class="fa fa-youtube-play ml-2"/>
+                    <i class="fa fa-twitter ml-2"/>
+                </div>
+                <div class="col-md-12 col-sm-12 header-right-menu"
+                     style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                    <div class="container">
+                    <div class="row pt16 pb16">
+                        <div class="col-md-3 col-sm-3">
+                            <img src="/website_infohensive/static/src/img/logo.png"/>
+                        </div>
+                        <div class="col-md-9 col-sm-9 text-right">
+                            <a href="/framework" class="menu-right">Framework</a>
+                            <a href="/erp-platfrom" class="menu-right ml-4">ERP Platform</a>
+                            <a href="#" class="menu-right ml-4">Pricing</a>
+                            <a href="/blog" class="menu-right ml-4">Blog</a>
+                            <a type="button" href="#" class="btn demo ml-4">Demo</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
         </xpath>
     </template>
 </odoo>

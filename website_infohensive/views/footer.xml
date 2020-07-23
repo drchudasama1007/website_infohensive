@@ -3,8 +3,59 @@
     <!-- ========== FOOTER ========== -->
     <template id="agency_bottom_footer" inherit_id="portal.frontend_layout">
         <xpath expr="//footer" position="replace">
-            <section>
-
+            <section class="footer bg-white pb32 pt32">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4" style="border-right: 2px solid #f1f1f1;">
+                            <h5 class="font-weight-bold pb16 pt32">Our Platform</h5>
+                            <p>Framework</p>
+                            <p>InfoSec ERP Platform</p>
+                            <p>About</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-center" style="border-right: 2px solid #f1f1f1;">
+                            <img class="pt32" src="/website_infohensive/static/src/img/logo.png"/>
+                            <h5 class="font-weight-bold pb16">Our Office Address</h5>
+                            <p>125/4A KDA Eve, Canada</p>
+                            <p>+8801254667877</p>
+                            <p>email@infohensive.com</p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 text-right">
+                            <h5 class="pt32 font-weight-bold pb16">Resources</h5>
+                            <p>Blog</p>
+                            <p>Knowledge Base</p>
+                            <p>F&amp;Qs</p>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-phone d-none bg-white pb32 pt32">
+                <div class="container">
+                    <div class="col-sm-12 col-12 text-center">
+                        <img class="pt32" src="/website_infohensive/static/src/img/logo.png"/>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 pt16">
+                            <h4 class="font-weight-bold pb16 pt32">Our Platform</h4>
+                            <p>Framework</p>
+                            <p>InfoSec ERP Platform</p>
+                            <p>About</p>
+                        </div>
+                        <div class="col-sm-12 col-12 pt32">
+                            <h4 class="font-weight-bold pb16">Our Office Address</h4>
+                            <p>125/4A KDA Eve, Canada</p>
+                            <p>+8801254667877</p>
+                            <p>email@infohensive.com</p>
+                        </div>
+                        <div class="col-sm-12 col-12">
+                            <h4 class="pt32 font-weight-bold pb16">Resources</h4>
+                            <p>Blog</p>
+                            <p>Knowledge Base</p>
+                            <p>F&amp;Qs</p>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </xpath>
     </template>

@@ -7,9 +7,10 @@
     'author': 'Bansi',
     'depends': ['base', 'website', 'portal'],
     'data': [
-        # 'views/assets.xml',
-        # 'views/header.xml',
-        # 'views/footer.xml',
+        'views/assets.xml',
+        'views/header.xml',
+        'views/footer.xml',
+        'views/blog.xml',
     ],
     'application': True,
     'installable': True,
