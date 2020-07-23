@@ -1,6 +1,6 @@
 /* ---------container set css--------- */
 
-.footer.container, .header.container, .blog.container{
+.container{
     max-width: 940px !important;
 }
 

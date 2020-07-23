@@ -5,6 +5,9 @@
             <!-- CSS Implementing Plugins -->
             <link href="/website_infohensive/static/src/css/homepage.css" rel="stylesheet"/>
             <link href="/website_infohensive/static/src/css/blog.css" rel="stylesheet"/>
+            <link href="/website_infohensive/static/src/css/app_management.css" rel="stylesheet"/>
+            <!-- JS Implementing Plugins -->
+            <script type="text/javascript" src="/website_infohensive/static/src/js/custom.js"></script>
         </xpath>
     </template>
 </odoo>

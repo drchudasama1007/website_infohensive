@@ -1,0 +1,15 @@
+/* ---------app_management set css--------- */
+
+.app_demo_btn{
+    background: #3c78d8;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.app_img{
+    box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);
+}
+.app_icon{
+    height: 60px;
+}
