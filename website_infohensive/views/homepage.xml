@@ -3,205 +3,337 @@
     <!-- ========== HOME PAGE ========== -->
     <template id="home_template" name="Home Page">
         <t t-call="website.layout">
-		<div class="container-fluid">
-            <div class="row bg-home">
-                <div class="col-md-4 offset-md-1 pb64">
-                    <h1 class="pt72 font-weight-bold">Framework</h1>
-                    <p class="pt8 mb0">A Simple, powerfull and comprehensiv approach to</p>
-                    <p class="mt0">information security.</p>
-                    <h1 class="pt32 font-weight-bold">ERP Platform</h1>
-                    <p class="pt8 mb0">A highly customisable and easy to use ERP for</p>
-                    <p class="mt0 mb0">implementing Information Security Controls baked into all</p>
-                    <p class="mt0">parts of the business.</p>
-                    <button class="btn btn-success">Framework</button>
-                    <button class="btn btn-primary ml-3">ERP Platform</button>
+            <div class="oe_structure home_section">
+                <div class="container-fluid">
+                    <div class="row bg-home">
+                        <div class="col-md-5 offset-md-2 pb64" style="padding-left: 50px;">
+                            <h1 class="pt72 font-weight-bold">Framework</h1>
+                            <p class="pt8 mb0">A Simple, powerfull and comprehensiv approach to</p>
+                            <p class="mt0">information security.</p>
+                            <h1 class="pt16 font-weight-bold">ERP Platform</h1>
+                            <p class="pt8 mb0">A highly customisable and easy to use ERP for</p>
+                            <p class="mt0 mb0">implementing Information Security Controls baked into all</p>
+                            <p class="mt0">parts of the business.</p>
+                            <button class="btn btn-success">Framework</button>
+                            <button class="btn ml-3 text-white" style="background: #684991;">ERP Platform</button>
+                        </div>
+                    </div>
                 </div>
+                <section style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                    <div class="container">
+                        <div class="row pb32">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <h1 class="pt32 mb0 font-weight-bold">A Comprehensive Solution to</h1>
+                                <h1 class="mt0 font-weight-bold">Information Security.</h1>
+                                <p class="pt8 mb0">Information Security isn't just about treating a certain area of
+                                    business
+                                    but
+                                </p>
+                                <p class="mt0">improving the health of the whole entily.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row pb32">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <h1 class="pt32 mb0 font-weight-bold">ERP Plateform</h1>
+                            </div>
+                        </div>
+                        <div class="row pl-3 pt8 pb8">
+                            <div class="col-md-4 col-sm-4">
+                                <h6 class="font-weight-bold text-center">ASSET MANAGEMENT</h6>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <h6 class="font-weight-bold text-center">RISK MANAGEMENT</h6>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <h6 class="font-weight-bold text-center">GOVERNANCE</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img1.png"
+                                             class="home_img pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-4">infoCMDB</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img2.png"
+                                             class="home_img pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-2">infoAsset</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img3.png"
+                                             class="home_img pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-4">infoControl</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img4.png"
+                                             class="home_img pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-2">infoRisk</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img5.png"
+                                             class="home_img1 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-4">infoDoc</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img6.png"
+                                             class="home_img1 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-2">infoProject</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 text-center pt8 pb8">
+                            <h6 class="font-weight-bold text-center">SERVICE MANAGEMENT</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img7.png"
+                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-4">infoIncident</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img8.png"
+                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-2">infoProblem</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img9.png"
+                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-4">infoChange</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img10.png"
+                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-2">infoRequest</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img11.png"
+                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-4">infoCatalog</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 text-center">
+                                        <img src="/website_infohensive/static/src/img/bg_img12.png"
+                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                        <p class="font-weight-bold pt8 ml-2">infoKnowledge</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-md-12 pt16 pb40 text-center">
+                            <a type="button" href="/erp-platfrom" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
+                                More on ERP Plateform
+                                <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt32 pb32"
+                         style="background-image: url('/website_infohensive/static/src/img/erp.png');box-shadow: 0px 0px 10px rgba(187, 175, 177, 1)">
+                    <div class="container">
+                        <div class="row pb32">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <h1 class="mb0 font-weight-bold">Framework</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 pl-0 erp_ipad" style="height: 400px">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8 border-bottom">
+                                            <h6 class="font-weight-bold" style="color: gray;">Optimistic</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 pt8">
+                                                <img src="/website_infohensive/static/src/img/Disaster Recovery.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Disaster
+                                                    Recovery
+                                                </span>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 pb8">
+                                                <img src="/website_infohensive/static/src/img/business community.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Business
+                                                    Continuity
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt8 pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8 border-bottom">
+                                            <h6 class="font-weight-bold" style="color: gray;">Progressive</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 pt8">
+                                                <img src="/website_infohensive/static/src/img/Group 8.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Governance
+                                                </span>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 pb8">
+                                                <img src="/website_infohensive/static/src/img/Group 7.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Awareness
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pl-0" style="height: 400px">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <img src="/website_infohensive/static/src/img/Framework.png"
+                                             style="width:100%;height: 380px"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pl-0" style="height: 400px">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8 border-bottom">
+                                            <h6 class="font-weight-bold" style="color: gray;">Proactive</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 pt8">
+                                                <img src="/website_infohensive/static/src/img/asset_management.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Asset
+                                                    Management
+                                                </span>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 pb8">
+                                                <img src="/website_infohensive/static/src/img/Risk mangment.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Risk
+                                                    Management
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt8 pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8 border-bottom">
+                                            <h6 class="font-weight-bold" style="color: gray;">Operational</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 pt8">
+                                                <img src="/website_infohensive/static/src/img/service managment.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Service
+                                                    Management
+                                                </span>
+                                            </div>
+                                            <div class="col-md-12 col-sm-12 pb8">
+                                                <img src="/website_infohensive/static/src/img/Secuirity managment.png"
+                                                     style="width:20%"/>
+                                                <span class="font-weight-bold ml-2" style="color: gray;">Security
+                                                    Operations
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-md-12 pt40 pb16 text-center">
+                            <a type="button" href="/erp-platfrom" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
+                                More on Solution
+                                <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-            <section class="bg-shadow">
-                <div class="container">
-                    <div class="row pb32">
-                <div class="col-md-12 text-center">
-                    <h1 class="pt32 mb0 font-weight-bold">A Comprehensive Solution to</h1>
-                    <h1 class="mt0 font-weight-bold">Information Security.</h1>
-                    <p class="pt8 mb0">Information Security isn't just about treating a certain area of business but</p>
-                    <p class="mt0">improving the health of the whole entily.</p>
-                </div>
-            </div>
-                </div>
-            </section>
-            <section class="bg-shadow">
+            <section>
                 <div class="container">
                     <div class="row pb32">
                         <div class="col-md-12 text-center">
-                            <h1 class="pt32 mb0">ERP Platform</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 text-center">
-                            <p class="font-weight-bold">ASSEST MANAGEMENT</p>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="bg_img_1">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoCMDB</p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="bg_img_2">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoAsset</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <p class="font-weight-bold">RISK MANAGEMENT</p>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="bg_img_3">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoControl</p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="bg_img_4">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoRisk</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <p class="font-weight-bold">GOVERNANCE</p>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="bg_img_5">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoDoc</p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="bg_img_6">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoProject</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pt8 pb32">
-                        <div class="col-md-4 text-center pt24">
-                            <p class="font-weight-bold"></p>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="bg_img_7">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoIncident</p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="bg_img_8">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoProblem</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <p class="font-weight-bold">SERVICE MANAGEMENT</p>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="bg_img_9">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoChange</p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="bg_img_10">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoRequest</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 text-center pt24">
-                            <p class="font-weight-bold"></p>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="bg_img_11">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoCatalog</p>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="bg_img_12">
-                                    </div>
-                                    <p class="font-weight-bold pt8 pl-3">infoKnowledge</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="bg-shadow">
-                <div class="container">
-                    <div class="row pb32">
-                        <div class="col-md-12 text-center">
-                            <h1 class="pt32 mb0">Blog</h1>
+                            <h1 class="pt32 mb0 font-weight-bold">Blog</h1>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4 col-sm-4 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16 mn_hight">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
+                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
+                                <div class="pt16 mn_hight" style="background-image: url('/website_infohensive/static/src/img/erp.png');">
+                                    <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software Ever!</h4>
+                                    <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing
+                                        elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore lorem sit.
+                                    </p>
+                                    <p class="pl-2">
+                                        <a href="#" class="font-weight-bold"
+                                           style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                        </a>
+                                    </p>
                                 </div>
-                         <div class="col-md-4 col-sm-4 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16 mn_hight">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 pb40">
+                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
+                                <div class="pt16 mn_hight" style="background-image: url('/website_infohensive/static/src/img/erp.png');">
+                                    <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software Ever!</h4>
+                                    <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing
+                                        elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore lorem sit.
+                                    </p>
+                                    <p class="pl-2">
+                                        <a href="#" class="font-weight-bold"
+                                           style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                        </a>
+                                    </p>
                                 </div>
-                         <div class="col-md-4 col-sm-4 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16 mn_hight">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 pb40">
+                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
+                                <div class="pt16 mn_hight" style="background-image: url('/website_infohensive/static/src/img/erp.png');">
+                                    <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software Ever!</h4>
+                                    <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing
+                                        elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore lorem sit.
+                                    </p>
+                                    <p class="pl-2">
+                                        <a href="#" class="font-weight-bold"
+                                           style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                        </a>
+                                    </p>
                                 </div>
-
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

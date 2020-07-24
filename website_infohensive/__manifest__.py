@@ -5,7 +5,7 @@
     'version': '1.0',
     'category': 'Website',
     'author': 'Bansi',
-    'depends': ['base', 'website', 'portal'],
+    'depends': ['base', 'website', 'portal', 'website_crm'],
     'data': [
         'views/assets.xml',
         'views/header.xml',
@@ -13,6 +13,9 @@
 	    'views/homepage.xml',
         'views/blog.xml',
         'views/app_management.xml',
+        'views/framework.xml',
+        'views/contactus.xml',
+        'views/erp_plateform.xml',
     ],
     'application': True,
     'installable': True,

@@ -8,8 +8,27 @@
     border-radius: 5px;
 }
 .app_img{
-    box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);
+    box-shadow: 1px 1px 10px rgba(172, 175, 177, 1);
 }
 .app_icon{
     height: 60px;
+}
+
+/* ---------mobile app_management set css--------- */
+
+@media (max-width: 767px) {
+    .app_desk{
+        display: none !important;
+    }
+    .app_phone{
+        display: block !important;
+    }
+    .app_demo_btn{
+        background: #3c78d8;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
 }

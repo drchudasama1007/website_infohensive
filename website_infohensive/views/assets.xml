@@ -2,10 +2,15 @@
 <odoo>
     <template id="assets_front_theme" inherit_id="website.assets_frontend">
         <xpath expr="." position="inside">
+
             <!-- CSS Implementing Plugins -->
             <link href="/website_infohensive/static/src/css/homepage.css" rel="stylesheet"/>
             <link href="/website_infohensive/static/src/css/blog.css" rel="stylesheet"/>
             <link href="/website_infohensive/static/src/css/app_management.css" rel="stylesheet"/>
+            <link href="/website_infohensive/static/src/css/contactus.css" rel="stylesheet"/>
+            <link href="/website_infohensive/static/src/css/framework.css" rel="stylesheet"/>
+            <link href="/website_infohensive/static/src/css/erp_plateform.css" rel="stylesheet"/>
+
             <!-- JS Implementing Plugins -->
             <script type="text/javascript" src="/website_infohensive/static/src/js/custom.js"></script>
         </xpath>

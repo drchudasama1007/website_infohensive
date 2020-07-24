@@ -1,0 +1,357 @@
+<odoo>
+
+    <!-- ========== Contact Us ========== -->
+    <template id="contactus_template" inherit_id="website.contactus" name="Contactus">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div class="oe_structure contactus_desk">
+                <section style="background-image: url('/website_infohensive/static/src/img/app.png');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 pt152">
+                                <h1 class="font-weight-bold">Contact Us</h1>
+                                <p class="pt8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                    eirmod tempor invidunt ut dolor megna aliquyam erat, sed diam voluptua. At vero eos
+                                    et justo duo doloers at ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                                    est Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/contactus.png"
+                                     style="width:100%;height: 400px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                    <div class="container">
+                        <div class="row pt40 pb64">
+                            <div class="col-md-12 col-sm-12">
+                                <h1 class="font-weight-bold pt40 pb16">
+                                    Services:
+                                </h1>
+                                <p style="font-size: 13px">
+                                    <span class="font-weight-bold" style="font-size:16px">Infohensive Framework -</span>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                                <p style="font-size: 13px">
+                                    <span class="font-weight-bold" style="font-size:16px">Infohensive ERP Platform -
+                                    </span>
+                                    A ready-to-use ERP Platform to implement Information Security controls into all
+                                    parts of your business.
+                                </p>
+                                <p style="font-size: 13px">
+                                    <span class="font-weight-bold" style="font-size:16px">Custom App Development</span>
+                                    Match your uniqe requirements. Stay on budget, on time and get return on your
+                                    investment with efficiently executed custom development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contactusForm">
+                    <div class="container">
+                        <div class="row pt32">
+                            <div class="col-md-12 col-sm-12">
+                            <h1 class="font-weight-bold">
+                                Have a question / idea / comment?
+                            </h1>
+                            </div>
+                        </div>
+                        <form action="/website_form/" method="post" data-model_name="crm.lead"
+                              data-success_page="/contactus-thank-you"
+                              class="s_website_form container-fluid mt32 khadlahj_contactus_form mx-0"
+                              enctype="multipart/form-data"
+                              data-editable-form="false">
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="contact_name" style="height:45px"
+                                           placeholder="first name"
+                                           t-att-value="request.params.get('contact_name', '')"
+                                           required="required"/>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="contact_name" style="height:45px"
+                                           placeholder="last name"
+                                           t-att-value="request.params.get('contact_name', '')"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-lg-12 col-md-12">
+                                    <input type="text" class="form-control o_website_form_input" name="email_from"
+                                           placeholder="corporate email" style="height:45px"
+                                           required="required"
+                                           t-att-value="request.params.get('email_from', '')"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="organization" style="height:45px"
+                                           placeholder="organization"
+                                           required="required"/>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="country" style="height:45px"
+                                           placeholder="country"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-lg-12 col-md-12">
+                                    <textarea class="form-control o_website_form_input"
+                                              placeholder="your comment or question..." rows="6" name="description"
+                                              required="required">
+                                        <t t-esc="request.params.get('description', '')"/>
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                <script src='https://www.google.com/recaptcha/api.js'></script>
+                                <div id="captcha" class="imageContainer">
+                                    <div class="form-group">
+                                        <div>
+                                            <p class="alert alert-danger d-none" id="reCAPTCHA">Please check the
+                                                reCAPTCHA.
+                                            </p>
+                                            <span class="o_website_form_recaptcha" required="required"/>
+                                        </div>
+                                        <!-- specify your site  in data-sitekey attribute-->
+                                        <div class="g-recaptcha" data-sitekey="6Le5nMQUAAAAALpK02mtPPGnpjVlnq6orhz4Zj0u"
+                                             data-callback="verifyRecaptchaCallback"
+                                             data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true"/>
+                                        <div class="help-block with-errors" id="err" style='color: red'></div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $("form").submit(function(event) {
+
+                                    var recaptcha = $("#g-recaptcha-response").val();
+                                    if (recaptcha === "") {
+                                    event.preventDefault();
+                                    $('#reCAPTCHA').removeClass('d-none');
+                                    }
+                                    else{
+                                    return true;
+                                    }
+                                    });
+
+                                </script>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                <span class="mr-2" style="padding-top: 2px;">
+                                    <input type="checkbox" class="pt8" id="condition" name="condition"
+                                           value="condition"/>
+                                </span>
+                                <label for="condition" style="font-weight:300">I agree to infohensive security
+                                    <span>
+                                        <a href="#">Privacy &amp; Policy</a>
+                                    </span>
+                                </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12 col-md-12">
+                                <input type="submit" id="businessEnquirySubmit"
+                                       style="padding-left: 30px;padding-right: 30px;"
+                                       class="btn bg-black submit o_website_form_send"
+                                       value="send">
+                                    <!--                                        <i class="fa fa-paper-plane"/>-->
+                                </input>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="oe_structure contactus_phone d-none">
+                <section style="background-image: url('/website_infohensive/static/src/img/app.png');">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-6 col-sm-6 pt32">
+                                <h1 class="font-weight-bold">Contact Us</h1>
+                                <p class="pt8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                    eirmod tempor invidunt ut dolor megna aliquyam erat, sed diam voluptua. At vero eos
+                                    et justo duo doloers at ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                                    est Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <img src="/website_infohensive/static/src/img/app1.png"
+                                     style="width:100%;height: 400px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row pt40">
+                            <div class="col-md-12 col-sm-12">
+                                <h1 class="font-weight-bold pb16">
+                                    Services:
+                                </h1>
+                                <p style="font-size: 13px">
+                                    <span class="font-weight-bold" style="font-size:16px">Infohensive Framework -</span>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                                <p style="font-size: 13px">
+                                    <span class="font-weight-bold" style="font-size:16px">Infohensive ERP Platform -
+                                    </span>
+                                    A ready-to-use ERP Platform to implement Information Security controls into all
+                                    parts of your business.
+                                </p>
+                                <p style="font-size: 13px">
+                                    <span class="font-weight-bold" style="font-size:16px">Custom App Development</span>
+                                    Match your uniqe requirements. Stay on budget, on time and get return on your
+                                    investment with efficiently executed custom development.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contactusForm">
+                    <div class="container">
+                        <div class="row pt32">
+                            <h1 class="font-weight-bold ml-3">
+                                Have a question / idea / comment?
+                            </h1>
+                        </div>
+                        <form action="/website_form/" method="post" data-model_name="crm.lead"
+                              data-success_page="/contactus-thank-you"
+                              class="s_website_form container-fluid mt32 khadlahj_contactus_form mx-0"
+                              enctype="multipart/form-data"
+                              data-editable-form="false">
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="contact_name" style="height:60px"
+                                           placeholder="first name"
+                                           t-att-value="request.params.get('contact_name', '')"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="contact_name" style="height:60px"
+                                           placeholder="last name"
+                                           t-att-value="request.params.get('contact_name', '')"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-lg-12 col-md-12">
+                                    <input type="text" class="form-control o_website_form_input" name="email_from"
+                                           placeholder="corporate email" style="height:60px"
+                                           required="required"
+                                           t-att-value="request.params.get('email_from', '')"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="organization" style="height:60px"
+                                           placeholder="organization"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" class="form-control o_website_form_input"
+                                           name="country" style="height:60px"
+                                           placeholder="country"
+                                           required="required"/>
+                                </div>
+                            </div>
+                            <div class="form-group row form-field o_website_form_required_custom">
+                                <div class="col-lg-12 col-md-12">
+                                    <textarea class="form-control o_website_form_input"
+                                              placeholder="your comment or question..." rows="6" name="description"
+                                              required="required">
+                                        <t t-esc="request.params.get('description', '')"/>
+                                    </textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                <script src='https://www.google.com/recaptcha/api.js'></script>
+                                <div id="captcha" class="imageContainer">
+                                    <div class="form-group">
+                                        <div>
+                                            <p class="alert alert-danger d-none" id="reCAPTCHA">Please check the
+                                                reCAPTCHA.
+                                            </p>
+                                            <span class="o_website_form_recaptcha" required="required"/>
+                                        </div>
+                                        <!-- specify your site  in data-sitekey attribute-->
+                                        <div class="g-recaptcha" data-sitekey="6Le5nMQUAAAAALpK02mtPPGnpjVlnq6orhz4Zj0u"
+                                             data-callback="verifyRecaptchaCallback"
+                                             data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true"/>
+                                        <div class="help-block with-errors" id="err" style='color: red'></div>
+                                    </div>
+                                </div>
+                                <script>
+                                    $("form").submit(function(event) {
+
+                                    var recaptcha = $("#g-recaptcha-response").val();
+                                    if (recaptcha === "") {
+                                    event.preventDefault();
+                                    $('#reCAPTCHA').removeClass('d-none');
+                                    }
+                                    else{
+                                    return true;
+                                    }
+                                    });
+
+                                </script>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                <span class="mr-2" style="padding-top: 2px;">
+                                    <input type="checkbox" class="pt8" id="condition" name="condition"
+                                           value="condition"/>
+                                </span>
+                                <label for="condition" style="font-weight:300">I agree to infohensive security
+                                    <span>
+                                        <a href="#">Privacy &amp; Policy</a>
+                                    </span>
+                                </label>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12 col-md-12">
+                                <input type="submit" id="businessEnquirySubmit"
+                                       style="padding-left: 30px;padding-right: 30px;"
+                                       class="btn bg-black submit o_website_form_send btn-block pt16 pb16"
+                                       value="send">
+                                    <!--                                        <i class="fa fa-paper-plane"/>-->
+                                </input>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

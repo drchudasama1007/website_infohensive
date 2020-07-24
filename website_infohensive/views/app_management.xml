@@ -1,122 +1,319 @@
 <odoo>
 
-    <!-- ========== BLOG ========== -->
+    <!-- ========== APP MANAGEMENT ========== -->
     <template id="app_management_template">
         <t t-call="website.layout">
-            <section class="app_management"
-                     style="background-image: url('/website_infohensive/static/src/img/app.png');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 pt152">
-                            <h1 class="font-weight-bold">App Management</h1>
-                            <p class="pt8">Beautiful. Easy. Open Source.</p>
+            <div class="oe_structure app_desk">
+                <section class="app_management"
+                         style="background-image: url('/website_infohensive/static/src/img/app.png');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 pt152">
+                                <h1 class="font-weight-bold">App Management</h1>
+                                <p class="pt8">Beautiful. Easy. Open Source.</p>
+                                <a type="button" href="#" class="btn app_demo_btn pt8 pb8">
+                                    Demo
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/app1.png"
+                                     style="width:100%;height: 400px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                        style="background-image: url('/website_infohensive/static/src/img/app.png');box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                    <div class="container">
+                        <div class="row pt40 pb40">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <span class="organize" style="color:#3c78d8;font-size: 18px;">ORGANIZE</span>
+                                <span class="schedual ml-3" style="font-size: 18px;">SCHEDUAL</span>
+                                <span class="plan ml-3" style="font-size: 18px;">PLAN</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pt32" id="organize">
+                                <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;"
+                                     class="app_img"/>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pt32 d-none" id="schedual">
+                                <img src="/website_infohensive/static/src/img/aap3.png" style="width:100%;"
+                                     class="app_img"/>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pt32 d-none" id="plan">
+                                <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;"
+                                     class="app_img"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row pt40 pb40">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">
+                                    Forecast need &amp; resources
+                                </h1>
+                                <p class="pt8" style="font-size:16px;">
+                                    Project performance &amp; employee's availibility
+                                </p>
+                                <p>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32"
+                                 style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                                <img src="/website_infohensive/static/src/img/aap2.png"
+                                     style="width:100%;height: 200px;"/>
+                            </div>
+                        </div>
+                        <div class="row pt40 pb40">
+                            <div class="col-md-6 col-sm-6 pt32 pb32"
+                                 style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                                <img src="/website_infohensive/static/src/img/aap3.png"
+                                     style="width:100%;height: 200px;"/>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">
+                                    Harness the power of visual information
+                                </h1>
+                                <p class="pt8" style="font-size:16px;">
+                                    Project performance &amp; employee's availibility
+                                </p>
+                                <p>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row pt40 pb40">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">
+                                    Forecast need &amp; resources
+                                </h1>
+                                <p class="pt8" style="font-size:16px;">
+                                    Project performance &amp; employee's availibility
+                                </p>
+                                <p>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32"
+                                 style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                                <img src="/website_infohensive/static/src/img/aap2.png"
+                                     style="width:100%;height: 200px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section style="background: #f1f1f1;">
+                    <div class="container">
+                        <div class="col-md-12 col-sm-12 text-center pt40">
+                            <h1 class="font-weight-bold">
+                                Fully integrated with other
+                                <br/>
+                                Infohensive Apps
+                            </h1>
+                        </div>
+                        <div class="row pb40 pt32 mx-5">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="card text-center">
+                                    <img src="/website_infohensive/static/src/img/appicon1.png"
+                                         class="mx-5 pl-5 pr-5 app_icon pt16"/>
+                                    <div class="pl-2 pr-2">
+                                        <h5 class="font-weight-bold pt16">
+                                            infoCMDB
+                                        </h5>
+                                        <p class="pt8">
+                                            Turn sales &amp; purchases into invoice in one-click and track them throught
+                                            their payment
+                                        </p>
+                                    </div>
+                                    <h6 class="pt8" style="border-top:1px solid #f1f1f1">Discover</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="card text-center">
+                                    <img src="/website_infohensive/static/src/img/appicon2.png"
+                                         class="mx-5 pl-5 pr-5 app_icon pt16"/>
+                                    <div class="pl-2 pr-2">
+                                        <h5 class="font-weight-bold pt16">
+                                            infoIncident
+                                        </h5>
+                                        <p class="pt8">
+                                            Turn sales &amp; purchases into invoice in one-click and track them throught
+                                            their payment
+                                        </p>
+                                    </div>
+                                    <h6 class="pt8" style="border-top:1px solid #f1f1f1">Discover</h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="card text-center">
+                                    <img src="/website_infohensive/static/src/img/appicon3.png"
+                                         class="mx-5 pl-5 pr-5 app_icon pt16"/>
+                                    <div class="pl-2 pr-2">
+                                        <h5 class="font-weight-bold pt16">
+                                            infoDoc
+                                        </h5>
+                                        <p class="pt8">
+                                            Turn sales &amp; purchases into invoice in one-click and track them throught
+                                            their payment
+                                        </p>
+                                    </div>
+                                    <h6 class="pt8" style="border-top:1px solid #f1f1f1">Discover</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="col-md-12 col-sm-12 text-center pt40">
+                            <h1 class="font-weight-bold pb16">
+                                Unleash your growth potential
+                            </h1>
                             <a type="button" href="#" class="btn app_demo_btn pt8 pb8">
                                 Demo
                             </a>
-                        </div>
-                        <div class="col-md-6 col-sm-6 pt32 pb32">
-                            <img src="/website_infohensive/static/src/img/app1.png" style="width:100%;height: 400px;"/>
+                            <p class="pt16 pt8">
+                                No credit card required, instant access
+                            </p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section
-                    style="background-image: url('/website_infohensive/static/src/img/app.png');box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
-                <div class="container">
-                    <div class="row pt40 pb40">
+                </section>
+            </div>
+            <div class="oe_structure">
+                <section class="app_management"
+                         style="background-image: url('/website_infohensive/static/src/img/app.png');">
+                    <div class="container">
+                        <div class="row pt32 text-center">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">App Management</h1>
+                                <p style="font-size:20px">Beautiful. Easy. Open Source.</p>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <img src="/website_infohensive/static/src/img/app1.png"
+                                     style="width:100%;height: 400px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                        style="background-image: url('/website_infohensive/static/src/img/app.png');">
+                    <div class="container">
+                        <div class="row pt40 pb40">
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <span class="organize font-weight-bold" style="color:#3c78d8;font-size: 18px;">
+                                    ORGANIZE
+                                </span>
+                                <span class="schedual font-weight-bold ml-3" style="font-size: 18px;">SCHEDUAL</span>
+                                <span class="plan font-weight-bold ml-3" style="font-size: 18px;">PLAN</span>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pt32" id="organize">
+                                <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;"
+                                     class="app_img"/>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pt32 d-none" id="schedual">
+                                <img src="/website_infohensive/static/src/img/aap3.png" style="width:100%;"
+                                     class="app_img"/>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pt32 d-none" id="plan">
+                                <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;"
+                                     class="app_img"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">
+                                    Forecast need &amp; resources
+                                </h1>
+                                <p class="pt8" style="font-size:16px;">
+                                    Project performance &amp; employee's availibility
+                                </p>
+                                <p>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/aap2.png" class="app_img"
+                                     style="width:100%;height: 200px;"/>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">
+                                    Harness the power of visual information
+                                </h1>
+                                <p class="pt8" style="font-size:16px;">
+                                    Project performance &amp; employee's availibility
+                                </p>
+                                <p>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/aap3.png" class="app_img"
+                                     style="width:100%;height: 200px;"/>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">
+                                    Forecast need &amp; resources
+                                </h1>
+                                <p class="pt8" style="font-size:16px;">
+                                    Project performance &amp; employee's availibility
+                                </p>
+                                <p>
+                                    Schedule your team acress project traching employee's holidays into account. Plan
+                                    ahead
+                                    for upcoming projects with forecast based on comparable projects and estimate
+                                    deadlines
+                                    more accurately. Compare forecast with real timesheets for increased profitability.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/aap2.png" class="app_img"
+                                     style="width:100%;height: 200px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
                         <div class="col-md-12 col-sm-12 text-center">
-                            <span class="organize" style="color:#3c78d8;font-size: 18px;">ORGANIZE</span>
-                            <span class="schedual ml-3" style="font-size: 18px;">SCHEDUAL</span>
-                            <span class="plan ml-3" style="font-size: 18px;">PLAN</span>
-                        </div>
-                        <div class="col-md-12 col-sm-12 pt32" id="organize">
-                            <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;"
-                                 class="app_img"/>
-                        </div>
-                        <div class="col-md-12 col-sm-12 pt32 d-none" id="schedual">
-                            <img src="/website_infohensive/static/src/img/aap3.png" style="width:100%;"
-                                 class="app_img"/>
-                        </div>
-                        <div class="col-md-12 col-sm-12 pt32 d-none" id="plan">
-                            <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;"
-                                 class="app_img"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="row pt40 pb40">
-                        <div class="col-md-6 col-sm-6">
                             <h1 class="font-weight-bold">
-                                Forecast need &amp; resources
+                                Fully integrated with other
+                                <br/>
+                                Infohensive Apps
                             </h1>
-                            <p class="pt8" style="font-size:16px;">
-                                Project performance &amp; employee's availibility
-                            </p>
-                            <p>
-                                Schedule your team acress project traching employee's holidays into account. Plan ahead
-                                for upcoming projects with forecast based on comparable projects and estimate deadlines
-                                more accurately. Compare forecast with real timesheets for increased profitability.
-                            </p>
                         </div>
-                        <div class="col-md-6 col-sm-6 pt32 pb32"
-                             style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
-                            <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;height: 200px;"/>
-                        </div>
-                    </div>
-                    <div class="row pt40 pb40">
-                        <div class="col-md-6 col-sm-6 pt32 pb32"
-                             style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
-                            <img src="/website_infohensive/static/src/img/aap3.png" style="width:100%;height: 200px;"/>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <h1 class="font-weight-bold">
-                                Harness the power of visual information
-                            </h1>
-                            <p class="pt8" style="font-size:16px;">
-                                Project performance &amp; employee's availibility
-                            </p>
-                            <p>
-                                Schedule your team acress project traching employee's holidays into account. Plan ahead
-                                for upcoming projects with forecast based on comparable projects and estimate deadlines
-                                more accurately. Compare forecast with real timesheets for increased profitability.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row pt40 pb40">
-                        <div class="col-md-6 col-sm-6">
-                            <h1 class="font-weight-bold">
-                                Forecast need &amp; resources
-                            </h1>
-                            <p class="pt8" style="font-size:16px;">
-                                Project performance &amp; employee's availibility
-                            </p>
-                            <p>
-                                Schedule your team acress project traching employee's holidays into account. Plan ahead
-                                for upcoming projects with forecast based on comparable projects and estimate deadlines
-                                more accurately. Compare forecast with real timesheets for increased profitability.
-                            </p>
-                        </div>
-                        <div class="col-md-6 col-sm-6 pt32 pb32"
-                             style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
-                            <img src="/website_infohensive/static/src/img/aap2.png" style="width:100%;height: 200px;"/>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section style="background: #f1f1f1;">
-                <div class="container">
-                    <div class="col-md-12 col-sm-12 text-center pt40">
-                        <h1 class="font-weight-bold">
-                            Fully integrated with other
-                            <br/>
-                            Infohensive Apps
-                        </h1>
-                    </div>
-                    <div class="row pb40 pt32 mx-5">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="card text-center">
+                        <div class="row pb40 pt32 mx-4">
+                            <div class="pb16">
+                            <div class="card pt16 pb8 text-center">
                                 <img src="/website_infohensive/static/src/img/appicon1.png"
                                      class="mx-5 pl-5 pr-5 app_icon pt16"/>
                                 <div class="pl-2 pr-2">
@@ -130,9 +327,9 @@
                                 </div>
                                 <h6 class="pt8" style="border-top:1px solid #f1f1f1">Discover</h6>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="card text-center">
+                            </div>
+                            <div class="pb16">
+                            <div class="card pt16 pb8 text-center">
                                 <img src="/website_infohensive/static/src/img/appicon2.png"
                                      class="mx-5 pl-5 pr-5 app_icon pt16"/>
                                 <div class="pl-2 pr-2">
@@ -146,9 +343,9 @@
                                 </div>
                                 <h6 class="pt8" style="border-top:1px solid #f1f1f1">Discover</h6>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <div class="card text-center">
+                            </div>
+                            <div>
+                            <div class="card pt16 pb8 text-center">
                                 <img src="/website_infohensive/static/src/img/appicon3.png"
                                      class="mx-5 pl-5 pr-5 app_icon pt16"/>
                                 <div class="pl-2 pr-2">
@@ -162,25 +359,26 @@
                                 </div>
                                 <h6 class="pt8" style="border-top:1px solid #f1f1f1">Discover</h6>
                             </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="container">
-                    <div class="col-md-12 col-sm-12 text-center pt40">
-                        <h1 class="font-weight-bold pb16">
-                            Unleash your growth potential
-                        </h1>
-                        <a type="button" href="#" class="btn app_demo_btn pt8 pb8">
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <h1 class="font-weight-bold pb16">
+                                Unleash your growth potential
+                            </h1>
+                            <a type="button" href="#" class="btn app_demo_btn pt16 pb16">
                                 Demo
                             </a>
-                        <p class="pt16 pt8">
-                            No credit card required, instant access
-                        </p>
+                            <p class="pt16 pt8" style="font-size: 20px;">
+                                No credit card required, instant access
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </t>
     </template>
 

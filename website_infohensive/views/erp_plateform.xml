@@ -1,0 +1,658 @@
+<odoo>
+
+    <!-- ========== ERP Plateform ========== -->
+    <template id="erp_plateform_template">
+        <t t-call="website.layout">
+            <div class="oe_structure erp_platform">
+                <section
+                        style="background-image: url('/website_infohensive/static/src/img/erp.png');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 pt152">
+                                <h1 class="font-weight-bold">ERP Plateform</h1>
+                                <p class="pt8">Easy to implement Information Security controls into all parts of the
+                                    business.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/office illustration.png"
+                                     style="width:100%;height: 400px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pb24"
+                         style="background-image: url('/website_infohensive/static/src/img/erp.png');box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                    <div class="container">
+                        <div class="col-md-12 col-md-12">
+                            <h1 class="font-weight-bold pt32 text-center pb16">ERP Plateform</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 erp_ipad pl-0">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h6 class="font-weight-bold">ASSET MANAGEMENT</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/bg_img1.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoCMDB</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/bg_img2.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">info Asset</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h6 class="font-weight-bold">RISK MANAGEMENT</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/bg_img3.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoControl</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/bg_img4.png"
+                                                     class="erp_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">infoRisk</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h6 class="font-weight-bold">AWARENESS</h6>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoAware</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/aware_2.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">infoPhising</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pl-0">
+                                <div class="pb8">
+                                    <div class="card erp_div pb16 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h6 class="font-weight-bold">SERVICE MANAGEMENT</h6>
+                                        </div>
+                                        <div class="row pb16 border-bottom">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/bg_img7.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoIncident</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/bg_img8.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">infoProblem</span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt16 pb16 border-bottom">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/bg_img11.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoCatalog</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/bg_img12.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">infoKnowledge</span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt16 pb16 border-bottom">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/bg_img9.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoChange</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/bg_img10.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">infoRequest</span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt16">
+                                            <div class="col-md-6 col-sm-6 border-right">
+                                                <img src="/website_infohensive/static/src/img/infoSLA.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">infoSLA</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                <img src="/website_infohensive/static/src/img/infoQA.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">infoQ&amp;A</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 pl-0 erp_ipad pt8">
+                                <div class="pb8">
+                                    <div class="card erp_div pb16 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h6 class="font-weight-bold">CHOOSE COMMUNITY APPS (FREE):</h6>
+                                        </div>
+                                        <div class="row pb8 border-bottom">
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/crm.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">CRM</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/invoice.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">Invoicing</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/sale.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Sales</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3">
+                                                <img src="/website_infohensive/static/src/imgApp/account.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Accounting</span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt8 pb8 border-bottom">
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/project.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Project</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/inventory.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">Inventory</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/purchase.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Purchase</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3">
+                                                <img src="/website_infohensive/static/src/imgApp/email.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Email Marketing</span>
+                                            </div>
+                                        </div>
+                                        <div class="row pt8">
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/timesheet.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Timesheets</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/expense.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2">Expenses</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 border-right">
+                                                <img src="/website_infohensive/static/src/imgApp/manu.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Manufacturing</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3">
+                                                <img src="/website_infohensive/static/src/imgApp/event.png"
+                                                     class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2">Events</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pb32">
+                    <div class="container">
+                        <div class="col-md-12 col-md-12 pt40 pb16">
+                            <h1 class="font-weight-bold text-center">Powered by Odoo</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 text-center">
+                                        <i class="fa fa-users fa-2x"></i>
+                                        <p class="pt8" style="font-size: 12px;">Users</p>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 erp_circle">
+                                        <h4>4.5m</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 text-center">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        <p class="pt8" style="font-size: 12px;">Community Developers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 text-center">
+                                        <i class="fa fa-calendar fa-2x"></i>
+                                        <p class="pt8" style="font-size: 12px;">Since</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-md-12 pb16 text-center">
+                            <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8"
+                               style="background:#875a7b">
+                                More on Odoo
+                                <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="oe_structure erp_platform_phone d-none">
+                <section
+                        style="background-image: url('/website_infohensive/static/src/img/erp.png');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 pt32 text-center">
+                                <h1 class="font-weight-bold">ERP Plateform</h1>
+                                <p class="pt8">Easy to implement Information Security controls into all parts of the
+                                    business.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pb32">
+                                <img src="/website_infohensive/static/src/img/office illustration.png"
+                                     style="width:100%;height: 400px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pb24" style="background: #f1f1f1">
+                    <div class="container">
+                        <div class="col-md-12 col-md-12">
+                            <h1 class="font-weight-bold pt32 text-center pb16">ERP Plateform</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">ASSET MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img1.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoCMDB</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8">
+                                                <img src="/website_infohensive/static/src/img/bg_img2.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">info Asset</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">RISK MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img3.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoControl</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8">
+                                                <img src="/website_infohensive/static/src/img/bg_img4.png"
+                                                     class="erp_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoRisk</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb16 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">SERVICE MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img7.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoIncident</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img8.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoProblem</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img11.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoCatalog</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img12.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoKnowledge</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img9.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoChange</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img10.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoRequest</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/infoSLA.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoSLA</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8">
+                                                <img src="/website_infohensive/static/src/img/infoQA.png"
+                                                     class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoQ&amp;A</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">RISK MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/bg_img3.png"
+                                                     class="erp_img pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoControl</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8">
+                                                <img src="/website_infohensive/static/src/img/bg_img4.png"
+                                                     class="erp_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoRisk</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">HUMAN RESOURCES</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoEmployee</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_2.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoExpenses</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoLeave</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8">
+                                                <img src="/website_infohensive/static/src/img/aware_2.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoTimesheet</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">ACCOUNTING MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoAccounting</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">INVENTORY MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoPurchase</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoInventory</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">SALES MANAGEMENT</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoCRM</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoSales</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="pb8">
+                                    <div class="card erp_div pb8 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">SUPPORT APPS</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoDeshboard</span>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 pt8 pb8">
+                                                <img src="/website_infohensive/static/src/img/aware_1.png"
+                                                     class="erp_img2 pl-2 pr-2 pt8 pb8"/>
+                                                <span class="font-weight-bold ml-2 erp_font">infoSales</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 pt8">
+                                <div class="pb8">
+                                    <div class="card erp_div pb16 m-0">
+                                        <div class="row pl-3 pt8 pb8">
+                                            <h5 class="font-weight-bold">CHOOSE COMMUNITY APPS (FREE):</h5>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/crm.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">CRM</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/invoice.png"
+                                                     class="odoo_app_img" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Invoicing</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/sale.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Sales</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/account.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Accounting</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/project.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Project</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/inventory.png"
+                                                     class="odoo_app_img" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Inventory</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/purchase.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Purchase</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/email.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Email Marketing</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/timesheet.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Timesheets</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/expense.png"
+                                                     class="odoo_app_img" style="padding-bottom: 4px;"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Expenses</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <img src="/website_infohensive/static/src/imgApp/manu.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Manufacturing</span>
+                                            </div>
+                                            <div class="col-md-3 col-sm-3 pt8">
+                                                <img src="/website_infohensive/static/src/imgApp/event.png"
+                                                     class="odoo_app_img"/>
+                                                <span class="font-weight-bold ml-2 erp_font">Events</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pb32">
+                    <div class="container">
+                        <div class="col-md-12 col-md-12 pt40 pb16">
+                            <h1 class="font-weight-bold text-center">Powered by Odoo</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 text-center">
+                                        <i class="fa fa-users fa-2x"></i>
+                                        <p class="pt8" style="font-size: 12px;">Users</p>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 erp_circle">
+                                        <h4>4.5m</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 text-center">
+                                        <i class="fa fa-cogs fa-2x"></i>
+                                        <p class="pt8" style="font-size: 12px;">Community Developers</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4 text-center">
+                                        <i class="fa fa-calendar fa-2x"></i>
+                                        <p class="pt8" style="font-size: 12px;">Since</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-md-12 pb16 text-center">
+                            <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8"
+                               style="background:#875a7b">
+                                More on Odoo
+                                <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+</odoo>

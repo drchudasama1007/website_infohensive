@@ -14,7 +14,15 @@ class CustomerPortal(http.Controller):
 
     @http.route(["/app-management"], type='http', auth="public", website=True)
     def app_management_page(self, page=0, *args, **kwargs):
-        return request.render('website_infohensive.app_management_template', {})
+        return request.render('website_infohensive.app_management_template', {})\
+
+    @http.route(["/framework"], type='http', auth="public", website=True)
+    def framework_page(self, page=0, *args, **kwargs):
+        return request.render('website_infohensive.framework_template', {})\
+
+    @http.route(["/erp-platfrom"], type='http', auth="public", website=True)
+    def erp_platform_page(self, page=0, *args, **kwargs):
+        return request.render('website_infohensive.erp_plateform_template', {})
 
 class HomePageModifications(Website):
     @http.route('/', type='http', auth="public", website=True)

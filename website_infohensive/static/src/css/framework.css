@@ -1,0 +1,18 @@
+/* ---------framework css--------- */
+
+.framework_div{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);
+}
+
+/* ---------mobile blog css--------- */
+
+@media (max-width: 767px) {
+    .framework{
+        display: none !important;
+    }
+    .framework_phone{
+        display: block !important;
+    }
+}

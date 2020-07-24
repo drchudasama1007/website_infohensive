@@ -1,0 +1,74 @@
+/* ---------ERP Plateform css--------- */
+
+.erp_div{
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);
+}
+.erp_img{
+    width:30%;
+    background: red;
+    border-radius: 5px;
+    height: 60px;
+}
+.erp_img1{
+    width:30%;
+    background: #3c78d8;
+    border-radius: 5px;
+    height: 60px;
+}
+.erp_img2{
+    width:30%;
+    background: black;
+    border-radius: 5px;
+    height: 60px;
+}
+.odoo_app_img{
+    width:38%;
+    border-radius: 5px;
+}
+
+/* ---------mobile ERP Platform css--------- */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .erp_ipad{
+        padding-left: 14px !important;
+    }
+    .erp_platform{
+        font-size: 12px !important;
+    }
+}
+@media (max-width: 767px) {
+    .erp_platform{
+        display: none !important;
+    }
+    .erp_platform_phone{
+        display: block !important;
+    }
+    .erp_img {
+        width: 30%;
+        background: red;
+        border-radius: 5px;
+        height: 80px;
+    }
+    .erp_img1 {
+        width: 30%;
+        background: #3c78d8;
+        border-radius: 5px;
+        height: 80px;
+    }
+    .erp_font{
+        font-size: 16px;
+    }
+    .odoo_app_img {
+        width: 30%;
+        border-radius: 5px;
+        height: 80px;
+    }
+    .erp_img2{
+        width:30%;
+        background: black;
+        border-radius: 5px;
+        height: 80px;
+    }
+}

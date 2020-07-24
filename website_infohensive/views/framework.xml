@@ -1,0 +1,399 @@
+<odoo>
+
+    <!-- ========== FRAMEWORK ========== -->
+    <template id="framework_template">
+        <t t-call="website.layout">
+            <div class="oe_structure framework">
+                <section style="background-image: url('/website_infohensive/static/src/img/frame.png');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 pt256">
+                                <h1 class="font-weight-bold">Framework</h1>
+                                <p class="pt8">Easy to implement Information Security controls into all parts of the
+                                    business.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/Framework.png"
+                                     style="width:100%;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt32 pb24" style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                    <div class="container">
+                        <div class="row pb16">
+                            <div class="col-md-2 col-sm-2 pr-0">
+                                <div class="framework_div" style="height: 200px;">
+                                    <img src="/website_infohensive/static/src/img/Proactive.png" style="width:100%;"/>
+                                    <h5 class="font-weight-bold text-center text-gray pt8">
+                                        Proactive
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-sm-10">
+                                <div class="framework_div" style="height: 200px;">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6" style="border-right:2px solid #dee2e6;">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/asset_management.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Asset Management
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        From discovery, acquisitions to disposal, assets management
+                                                        addresses the whole life cycle of the information assets.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/Risk mangment.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Risk Management
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        Identity, assess and treat risks. Risk monitoring updates the
+                                                        changing risk posture of the business to all stakeholders.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb16">
+                            <div class="col-md-2 col-sm-2 pr-0">
+                                <div class="framework_div" style="height: 200px;">
+                                    <img src="/website_infohensive/static/src/img/Operational.png" style="width:100%;"/>
+                                    <h5 class="font-weight-bold text-center text-gray pt8">
+                                        Operational
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-sm-10">
+                                <div class="framework_div" style="height: 200px;">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6" style="border-right:2px solid #dee2e6;">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/service managment.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Service Management
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        People, process and technology are synergised for managing
+                                                        quality IT service that meet the needs of the business.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/Secuirity managment.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Security Operations
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        An ever evolving measures that raises consciousness among all
+                                                        stakeholders of potential risks targenting human behaviour.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--                            <div class="col-md-2 col-sm-2" style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">-->
+                            <!--                                <img src="/website_infohensive/static/src/img/Progressive.png" style="width:100%;"/>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="row pb16">
+                            <div class="col-md-10 col-sm-10">
+                                <div class="framework_div" style="height: 200px;">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6" style="border-right:2px solid #dee2e6;">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/Group 7.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Awareness
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        An ever evolving measures that raises consciousness among all
+                                                        stakeholders of potential risks targenting human behaviour.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/Group 8.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Governance
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        Provide oversight and accountabilities to ensure that controla
+                                                        are implemented to mitigate risks,and comply with standrads.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2 pl-0">
+                                <div class="framework_div" style="height: 200px;">
+                                    <img src="/website_infohensive/static/src/img/Progressive.png" style="width:100%;"/>
+                                    <h5 class="font-weight-bold text-center text-gray pt8">
+                                        Progressive
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb16">
+                            <div class="col-md-10 col-sm-10">
+                                <div class="framework_div" style="height: 200px;">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6" style="border-right:2px solid #dee2e6;">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/Disaster Recovery.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Disaster Recovery
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        Prepares for the unexpected interuption to IT initiated by
+                                                        various causes such as natural disaster, equipment failur or
+                                                        malicious activity.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="row pt8 pl-2 pb16">
+                                                <div class="col-md-3 col-sm-3 pt16">
+                                                    <img src="/website_infohensive/static/src/img/business community.png"
+                                                         style="width:100%;"/>
+                                                </div>
+                                                <div class="col-md-9 col-sm-9">
+                                                    <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                                        Business Continuity
+                                                    </h5>
+                                                    <p style="color: gray;">
+                                                        Ensures of the continuty of the whole bussiness from undesirable
+                                                        and uncontrollable consequences of bussiness interrutions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-2 pl-0">
+                                <div class="framework_div" style="height: 200px;">
+                                    <img src="/website_infohensive/static/src/img/Optimistic.png" style="width:100%;"/>
+                                    <h5 class="font-weight-bold text-center text-gray pt8">
+                                        Optimistic
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="oe_structure framework_phone d-none">
+                <section style="background-image: url('/website_infohensive/static/src/img/frame.png');">
+                    <div class="container">
+                        <div class="row text-center pt32">
+                            <div class="col-md-6 col-sm-6">
+                                <h1 class="font-weight-bold">Framework</h1>
+                                <p class="pt8" style="font-size:20px">Easy to implement Information Security controls
+                                    into all parts of the
+                                    business.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                                <img src="/website_infohensive/static/src/img/Framework.png"
+                                     style="width:100%;"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt32 pb24" style="background:#f1f1f1;">
+                    <div class="container">
+                        <div class="row pb16">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="col-md-12 col-sm-12 bg-white pl-5 pr-5 framework_div">
+                                    <div class="framework_div mx-3 mt16" style="height: 200px;">
+                                        <img src="/website_infohensive/static/src/img/Proactive.png" class="mx-3 pl-2"
+                                             style="width:80%;height:150px"/>
+                                        <h5 class="font-weight-bold text-center text-gray pt8">
+                                            Proactive
+                                        </h5>
+                                    </div>
+                                    <div class="text-center pt32" style="border-bottom:2px solid #f1f1f1">
+                                        <img src="/website_infohensive/static/src/img/asset_management.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Asset Management
+                                        </h5>
+                                        <p style="color: gray;">
+                                            From discovery, acquisitions to disposal, assets management
+                                            addresses the whole life cycle of the information assets.
+                                        </p>
+                                    </div>
+                                    <div class="text-center pt32">
+                                        <img src="/website_infohensive/static/src/img/Risk mangment.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Risk Management
+                                        </h5>
+                                        <p style="color: gray;">
+                                            Identity, assess and treat risks. Risk monitoring updates the
+                                            changing risk posture of the business to all stakeholders.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb16">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="col-md-12 col-sm-12 bg-white pl-5 pr-5 framework_div">
+                                    <div class="framework_div mx-3 mt16" style="height: 200px;">
+                                        <img src="/website_infohensive/static/src/img/Proactive.png" class="mx-3 pl-2"
+                                             style="width:80%;height:150px"/>
+                                        <h5 class="font-weight-bold text-center text-gray pt8">
+                                            Proactive
+                                        </h5>
+                                    </div>
+                                    <div class="text-center pt32" style="border-bottom:2px solid #f1f1f1">
+                                        <img src="/website_infohensive/static/src/img/service managment.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Service Management
+                                        </h5>
+                                        <p style="color: gray;">
+                                            People, process and technology are synergised for managing
+                                            quality IT service that meet the needs of the business.
+                                        </p>
+                                    </div>
+                                    <div class="text-center pt32">
+                                        <img src="/website_infohensive/static/src/img/Secuirity managment.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Security Operations
+                                        </h5>
+                                        <p style="color: gray;">
+                                            An ever evolving measures that raises consciousness among all
+                                            stakeholders of potential risks targenting human behaviour.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb16">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="col-md-12 col-sm-12 bg-white pl-5 pr-5 framework_div">
+                                    <div class="framework_div mx-3 mt16" style="height: 200px;">
+                                        <img src="/website_infohensive/static/src/img/Proactive.png" class="mx-3 pl-2"
+                                             style="width:80%;height:150px"/>
+                                        <h5 class="font-weight-bold text-center text-gray pt8">
+                                            Proactive
+                                        </h5>
+                                    </div>
+                                    <div class="text-center pt32" style="border-bottom:2px solid #f1f1f1">
+                                        <img src="/website_infohensive/static/src/img/Group 7.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Awareness
+                                        </h5>
+                                        <p style="color: gray;">
+                                            An ever evolving measures that raises consciousness among all
+                                            stakeholders of potential risks targenting human behaviour.
+                                        </p>
+                                    </div>
+                                    <div class="text-center pt32">
+                                        <img src="/website_infohensive/static/src/img/Group 8.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Governance
+                                        </h5>
+                                        <p style="color: gray;">
+                                            Provide oversight and accountabilities to ensure that controla
+                                            are implemented to mitigate risks,and comply with standrads.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb16">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="col-md-12 col-sm-12 bg-white pl-5 pr-5 framework_div">
+                                    <div class="framework_div mx-3 mt16" style="height: 200px;">
+                                        <img src="/website_infohensive/static/src/img/Proactive.png" class="mx-3 pl-2"
+                                             style="width:80%;height:150px"/>
+                                        <h5 class="font-weight-bold text-center text-gray pt8">
+                                            Proactive
+                                        </h5>
+                                    </div>
+                                    <div class="text-center pt32" style="border-bottom:2px solid #f1f1f1">
+                                        <img src="/website_infohensive/static/src/img/Disaster Recovery.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Disaster Recovery
+                                        </h5>
+                                        <p style="color: gray;">
+                                            Prepares for the unexpected interuption to IT initiated by
+                                            various causes such as natural disaster, equipment failur or
+                                            malicious activity.
+                                        </p>
+                                    </div>
+                                    <div class="text-center pt32">
+                                        <img src="/website_infohensive/static/src/img/business community.png"
+                                             style="width:30%;"/>
+                                        <h5 class="font-weight-bold pt8 pb8" style="color: gray;">
+                                            Business Continuity
+                                        </h5>
+                                        <p style="color: gray;">
+                                            Ensures of the continuty of the whole bussiness from undesirable
+                                            and uncontrollable consequences of bussiness interrutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+</odoo>

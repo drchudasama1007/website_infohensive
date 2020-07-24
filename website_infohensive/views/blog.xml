@@ -3,6 +3,7 @@
     <!-- ========== BLOG ========== -->
     <template id="blog_template">
         <t t-call="website.layout">
+            <div class="oe_structure">
             <section class="blog">
                 <div class="container">
                     <div class="col-md-12 col-sm-12 text-center pt40">
@@ -441,6 +442,7 @@
                     </div>
                 </div>
             </section>
+            </div>
         </t>
     </template>
 

@@ -1,0 +1,20 @@
+/* ---------contactus css--------- */
+
+.col-lg-4 address{
+    display: none;
+}
+.contactusForm textarea::-webkit-input-placeholder {
+    color: #lightgray !important;
+}
+
+
+/* ---------mobile app_management set css--------- */
+
+@media (max-width: 767px) {
+    .contactus_desk{
+        display: none !important;
+    }
+    .contactus_phone{
+        display: block !important;
+    }
+}
