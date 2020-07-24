@@ -1,8 +1,8 @@
 <odoo>
 
     <!-- ========== BLOG ========== -->
-    <template id="blog_template">
-        <t t-call="website.layout">
+    <template id="blog_template" inherit_id="website_blog.index">
+         <xpath expr="//div[@id='wrap']" position="replace">
             <div class="oe_structure">
             <section class="blog">
                 <div class="container">
@@ -443,7 +443,7 @@
                 </div>
             </section>
             </div>
-        </t>
+         </xpath>
     </template>
 
 </odoo>

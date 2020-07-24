@@ -1,33 +1,97 @@
 <odoo>
 
     <!-- ========== HEADER ========== -->
+<!--    <template id="agency_top_header" inherit_id="portal.frontend_layout">-->
+<!--        <xpath expr="//header" position="replace">-->
+<!--            <section class="header">-->
+<!--                <div class="col-md-12 col-sm-12 top-menu col-sm-12 container text-right pt8 pb8">-->
+<!--                    <a type="button" href="/contactus" class="btn">Contact us</a>-->
+<!--                    <i class="fa fa-linkedin ml-2"/>-->
+<!--                    <i class="fa fa-youtube-play ml-2"/>-->
+<!--                    <i class="fa fa-twitter ml-2"/>-->
+<!--                </div>-->
+<!--                <div class="col-md-12 col-sm-12 header-right-menu"-->
+<!--                     style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">-->
+<!--                    <div class="container">-->
+<!--                    <div class="row pt16 pb16">-->
+<!--                        <div class="col-md-3 col-sm-3">-->
+<!--                            <img src="/website_infohensive/static/src/img/logo.png"/>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-9 col-sm-9 text-right">-->
+<!--                            <t t-foreach="website.menu_id.child_id" t-as="submenu">-->
+<!--                                <t t-call="website.submenu"/>-->
+<!--                            </t>-->
+<!--&lt;!&ndash;                            <a href="/framework" class="menu-right">Framework</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="/erp-platfrom" class="menu-right ml-4">ERP Platform</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="#" class="menu-right ml-4">Pricing</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a href="/blog" class="menu-right ml-4">Blog</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <a type="button" href="#" class="btn demo ml-4">Demo</a>&ndash;&gt;-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+<!--     <template id="layout_logo_show" inherit_id="portal.frontend_layout">-->
+<!--        <xpath expr="//div[@id='wrapwrap']/header/div[hasclass('navbar-default')]/div[hasclass('container')]/div[hasclass('collapse')]/ul"-->
+<!--               position="replace">-->
+<!--            <ul class="nav navbar-nav navbar-right" id="top_menu">-->
+<!--                <li class="logo">-->
+<!--                    <a href="/" style="padding-top: 0px">-->
+<!--                        <img src="/theme_lamp/static/src/img/logo.png" title="Glossy" alt="Glossy" style="height: 60px;"/>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <t t-foreach="website.menu_id.child_id" t-as="submenu">-->
+<!--                    <t t-call="website.submenu"/>-->
+<!--                </t>-->
+<!--            </ul>-->
+<!--        </xpath>-->
+<!--    </template>-->
+
     <template id="agency_top_header" inherit_id="portal.frontend_layout">
         <xpath expr="//header" position="replace">
-            <section class="header">
-                <div class="col-md-12 col-sm-12 top-menu col-sm-12 container text-right pt8 pb8">
-                    <a type="button" href="/contactus" class="btn">Contact us</a>
-                    <i class="fa fa-linkedin ml-2"/>
-                    <i class="fa fa-youtube-play ml-2"/>
-                    <i class="fa fa-twitter ml-2"/>
+	                 
+            <header>
+   <div class="col-md-12 col-sm-12 top-menu col-sm-12 container text-right pt8 pb8">
+                    <a type="button" href="/contactus" class="btn" style="background: #3c78d8;color: white;padding: 5px 10px;">Contact us</a>
+                   <i class="fa fa-linkedin ml-2 demo_icon"/>
+                    <i class="fa fa-youtube-play ml-2 demo_icon"/>
+                  <i class="fa fa-twitter ml-2 demo_icon"/>
                 </div>
-                <div class="col-md-12 col-sm-12 header-right-menu"
-                     style="box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
-                    <div class="container">
-                    <div class="row pt16 pb16">
-                        <div class="col-md-3 col-sm-3">
-                            <img src="/website_infohensive/static/src/img/logo.png"/>
+                 <nav class="navbar navbar-expand-md navbar-light bg-light" style="background: white !important;box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                        <div class="container">
+                            <a href="/" class="navbar-brand logo pl-5">
+                                <img t-att-src="'/logo.png?company=%s' % res_company.id" t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                            </a>
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top_menu_collapse">
+                                <span class="navbar-toggler-icon"/>
+                            </button>
+                            <div class="collapse navbar-collapse" id="top_menu_collapse">
+                                <!-- FIXME We want menu to open to the right by default (except cases handled in JS) -->
+                                <ul class="nav navbar-nav ml-auto text-right" id="top_menu">
+                                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+						<li t-if="submenu.is_visible and not has_visible_submenu" class="nav-item mt8 pr-3">
+							<a t-att-href="submenu.clean_url()"
+							    t-attf-class="menu-item #{'active' if submenu.clean_url() and unslug_url(request.httprequest.path) == unslug_url(submenu.clean_url()) else ''}"
+							    role="menuitem"
+							    t-ignore="true"
+							    t-att-target="'_blank' if submenu.new_window else None" style="color:black">
+							    <span t-field="submenu.name"/>
+							</a>
+						    </li>
+
+                    				<!--  <t t-call="website.submenu"/> -->
+                			</t>
+					<li class="nav-item">
+							<a type="button" href="#" class="btn demo" style="background: #3c78d8;color: white;padding: 5px 10px;">Demo</a>
+						   </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-md-9 col-sm-9 text-right">
-                            <a href="/framework" class="menu-right">Framework</a>
-                            <a href="/erp-platfrom" class="menu-right ml-4">ERP Platform</a>
-                            <a href="#" class="menu-right ml-4">Pricing</a>
-                            <a href="/blog" class="menu-right ml-4">Blog</a>
-                            <a type="button" href="#" class="btn demo ml-4">Demo</a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </section>
+                 </nav>
+            </header>
         </xpath>
     </template>
 </odoo>

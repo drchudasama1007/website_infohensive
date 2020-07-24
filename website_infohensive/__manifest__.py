@@ -8,6 +8,7 @@
     'depends': ['base', 'website', 'portal', 'website_crm'],
     'data': [
         'views/assets.xml',
+        'data/data.xml',
         'views/header.xml',
         'views/footer.xml',
 	    'views/homepage.xml',

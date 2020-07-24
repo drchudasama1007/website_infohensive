@@ -95,3 +95,10 @@
 .mn_hight{
     height: 170px;
 }
+
+.demo_icon{
+    background: #3c78d8;
+    color: white;
+    padding: 7px 7px;
+
+}
