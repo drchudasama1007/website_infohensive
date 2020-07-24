@@ -161,12 +161,11 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-lg-12 col-md-12">
-                                <input type="submit" id="businessEnquirySubmit"
+                                <button type="submit" id="businessEnquirySubmit"
                                        style="padding-left: 30px;padding-right: 30px;"
-                                       class="btn bg-black submit o_website_form_send"
-                                       value="send">
-                                    <!--                                        <i class="fa fa-paper-plane"/>-->
-                                </input>
+                                       class="btn bg-black submit o_website_form_send">
+                                    Send<i class="fa fa-paper-plane pl-2"/>
+                                </button>
                                 </div>
                             </div>
 
@@ -336,12 +335,12 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-lg-12 col-md-12">
-                                <input type="submit" id="businessEnquirySubmit"
+                                <button type="submit" id="businessEnquirySubmit"
                                        style="padding-left: 30px;padding-right: 30px;"
-                                       class="btn bg-black submit o_website_form_send btn-block pt16 pb16"
-                                       value="send">
+                                       class="btn bg-black submit o_website_form_send btn-block pt16 pb16">
+                                    Send<i class="fa fa-paper-plane pl-2"/>
                                     <!--                                        <i class="fa fa-paper-plane"/>-->
-                                </input>
+                                </button>
                                 </div>
                             </div>
 
