@@ -1,3 +1,21 @@
+/* ---------Rubik Font--------- */
+
+@font-face {
+    font-family: 'Rubik-Regular';
+    src: url('/fonts/Rubik-Regular.ttf') format('ttf'),
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Rubik-Regular' !important;
+}
+
+h1, h2, h3, h4, h5, h6, span, p, div, a{
+    font-family: 'Rubik-Regular' !important;
+}
+
 /* ---------container set css--------- */
 
 .container{
@@ -67,7 +85,6 @@
     color: black;
     text-decoration: none;
 }
-
 .home_img{
     background: red;
     border-radius: 5px;
@@ -95,10 +112,11 @@
 .mn_hight{
     height: 170px;
 }
-
+a{
+    text-decoration: none;
+}
 .demo_icon{
     background: #3c78d8;
     color: white;
     padding: 7px 7px;
-
 }

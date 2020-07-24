@@ -85,12 +85,12 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img5.png"
-                                             class="home_img1 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img1 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8">infoDoc</p>
                                     </div>
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img6.png"
-                                             class="home_img1 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img1 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8 ml-2">infoProject</p>
                                     </div>
                                 </div>
@@ -104,12 +104,12 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img7.png"
-                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img3 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8">infoIncident</p>
                                     </div>
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img8.png"
-                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img3 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8 ml-2">infoProblem</p>
                                     </div>
                                 </div>
@@ -118,12 +118,12 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img9.png"
-                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img3 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8">infoChange</p>
                                     </div>
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img10.png"
-                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img3 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8 ml-2">infoRequest</p>
                                     </div>
                                 </div>
@@ -132,12 +132,12 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img11.png"
-                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img3 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8 ml-4">infoCatalog</p>
                                     </div>
                                     <div class="col-md-6 col-sm-6 text-center">
                                         <img src="/website_infohensive/static/src/img/bg_img12.png"
-                                             class="home_img3 pt16 pb16 pl-3 pr-3"/>
+                                             class="home_img3 pt16 pb16 pl-4 pr-4"/>
                                         <p class="font-weight-bold pt8 ml-2">infoKnowledge</p>
                                     </div>
                                 </div>
