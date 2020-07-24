@@ -229,36 +229,43 @@
                         <div class="col-md-12 col-md-12 pt40 pb16">
                             <h1 class="font-weight-bold text-center">Powered by Odoo</h1>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
+                        <div class="row pt16">
+                            <div class="col-md-2 col-sm-2"/>
+                            <div class="col-md-3 col-sm-3">
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 text-center">
+                                    <div class="col-md-4 col-sm-4 text-center pt32">
                                         <i class="fa fa-users fa-2x"></i>
                                         <p class="pt8" style="font-size: 12px;">Users</p>
                                     </div>
-                                    <div class="col-md-8 col-sm-8 erp_circle">
-                                        <h4>4.5m</h4>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2 class="erp_circle">4.5m</h2>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-md-3 col-sm-3">
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 text-center">
+                                    <div class="col-md-4 col-sm-4 text-center pt16">
                                         <i class="fa fa-cogs fa-2x"></i>
                                         <p class="pt8" style="font-size: 12px;">Community Developers</p>
                                     </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2 class="erp_circle">2000+</h2>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4">
+                            <div class="col-md-2 col-sm-2">
                                 <div class="row">
-                                    <div class="col-md-4 col-sm-4 text-center">
+                                    <div class="col-md-4 col-sm-4 text-center pt32">
                                         <i class="fa fa-calendar fa-2x"></i>
                                         <p class="pt8" style="font-size: 12px;">Since</p>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <h2 class="erp_circle">2005</h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 col-md-12 pb16 text-center">
+                        <div class="col-md-12 col-md-12 pt24 pb16 text-center">
                             <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8"
                                style="background:#875a7b">
                                 More on Odoo
@@ -610,40 +617,38 @@
                 </section>
                 <section class="pb32">
                     <div class="container">
-                        <div class="col-md-12 col-md-12 pt40 pb16">
-                            <h1 class="font-weight-bold text-center">Powered by Odoo</h1>
+                        <div class="col-md-12 col-md-12 pt16 pb16">
+                            <h3 class="font-weight-bold text-center">Powered by Odoo</h3>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 text-center">
-                                        <i class="fa fa-users fa-2x"></i>
-                                        <p class="pt8" style="font-size: 12px;">Users</p>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 erp_circle">
-                                        <h4>4.5m</h4>
-                                    </div>
-                                </div>
+                            <div class="col-6 text-center pt16">
+                                <i class="fa fa-users fa-3x"></i>
+                                <p class="pt8" style="font-size: 12px;">Users</p>
                             </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 text-center">
-                                        <i class="fa fa-cogs fa-2x"></i>
-                                        <p class="pt8" style="font-size: 12px;">Community Developers</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="row">
-                                    <div class="col-md-4 col-sm-4 text-center">
-                                        <i class="fa fa-calendar fa-2x"></i>
-                                        <p class="pt8" style="font-size: 12px;">Since</p>
-                                    </div>
-                                </div>
+                            <div class="col-6 text-center">
+                                <h2 class="erp_circle">4.5m</h2>
                             </div>
                         </div>
-                        <div class="col-md-12 col-md-12 pb16 text-center">
-                            <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8"
+                        <div class="row ml-3 mr-3">
+                            <div class="col-6 text-center">
+                                <h2 class="erp_circle">2000+</h2>
+                            </div>
+                            <div class="col-6 text-center pt16">
+                                <i class="fa fa-cogs fa-3x"></i>
+                                <p class="pt8" style="font-size: 12px;">Community Developers</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-center pt16">
+                                <i class="fa fa-calendar fa-3x"></i>
+                                <p class="pt8" style="font-size: 12px;">Since</p>
+                            </div>
+                            <div class="col-6 text-center">
+                                <h2 class="erp_circle">2005</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-md-12 pt24 pb16 text-center">
+                            <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8 btn-block"
                                style="background:#875a7b">
                                 More on Odoo
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>

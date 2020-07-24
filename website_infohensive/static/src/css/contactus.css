@@ -17,4 +17,10 @@
     .contactus_phone{
         display: block !important;
     }
+    .home_section{
+        display: none !important;
+    }
+    .home_section_phone{
+        display: block !important;
+    }
 }

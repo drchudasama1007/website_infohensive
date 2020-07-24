@@ -8,9 +8,9 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4" style="border-right: 2px solid #f1f1f1;">
                             <h5 class="font-weight-bold pb16 pt32">Our Platform</h5>
-                            <p>Framework</p>
-                            <p>InfoSec ERP Platform</p>
-                            <p>About</p>
+                            <p><a href="/framework">Framework</a></p>
+                            <p><a href="/erp-platform">InfoSec ERP Platform</a></p>
+                            <p><a href="#">About</a></p>
                         </div>
                         <div class="col-md-4 col-sm-4 text-center" style="border-right: 2px solid #f1f1f1;">
                             <img class="pt32" src="/website_infohensive/static/src/img/logo.png"/>
@@ -21,10 +21,10 @@
                         </div>
                         <div class="col-md-4 col-sm-4 text-right">
                             <h5 class="pt32 font-weight-bold pb16">Resources</h5>
-                            <p>Blog</p>
-                            <p>Knowledge Base</p>
-                            <p>F&amp;Qs</p>
-                            <p>Support</p>
+                            <p><a href="/blog">Blog</a></p>
+                            <p><a href="#">Knowledge Base</a></p>
+                            <p><a href="#">F&amp;Qs</a></p>
+                            <p><a href="#">Support</a></p>
                         </div>
                     </div>
                 </div>

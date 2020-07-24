@@ -15,6 +15,10 @@
 .footer p{
     color: #666565;
 }
+.footer a{
+    color: #666565;
+    text-decoration: none;
+}
 
 /* ---------mobile footer css--------- */
 
