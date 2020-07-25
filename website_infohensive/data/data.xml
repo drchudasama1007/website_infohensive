@@ -10,7 +10,7 @@
 
         <record id="erp_ptform_menu" model="website.menu">
             <field name="name">ERP Platform</field>
-            <field name="url">/erp-platfrom</field>
+            <field name="url">/erp-platform</field>
             <field name="parent_id" ref="website.main_menu"/>
         </record>
 

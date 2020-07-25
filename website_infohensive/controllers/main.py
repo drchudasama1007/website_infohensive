@@ -20,7 +20,7 @@ class CustomerPortal(http.Controller):
     def framework_page(self, page=0, *args, **kwargs):
         return request.render('website_infohensive.framework_template', {})\
 
-    @http.route(["/erp-platfrom"], type='http', auth="public", website=True)
+    @http.route(["/erp-platform"], type='http', auth="public", website=True)
     def erp_platform_page(self, page=0, *args, **kwargs):
         return request.render('website_infohensive.erp_plateform_template', {})
 

@@ -144,7 +144,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-md-12 pt16 pb40 text-center">
-                            <a type="button" href="/erp-platfrom" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
+                            <a type="button" href="/erp-platform" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
                                 More on ERP Platform
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
                             </a>
@@ -494,7 +494,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-md-12 pt16 pb40 text-center">
-                            <a type="button" href="/erp-platfrom" class="btn text-white btn-block pl-3 pr-3 pt16 pb16 bg-black" style="font-size: 17px;">
+                            <a type="button" href="/erp-platform" class="btn text-white btn-block pl-3 pr-3 pt16 pb16 bg-black" style="font-size: 17px;">
                                 More on ERP Platform
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
                             </a>
