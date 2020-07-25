@@ -5,7 +5,7 @@
     'version': '1.0',
     'category': 'Website',
     'author': 'Bansi',
-    'depends': ['base', 'website', 'portal', 'website_crm', 'website_blog'],
+    'depends': ['base', 'website', 'portal', 'website_crm', 'website_blog', 'website_mail'],
     'data': [
         'views/assets.xml',
         'data/data.xml',

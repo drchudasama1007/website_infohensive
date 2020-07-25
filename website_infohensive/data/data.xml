@@ -14,6 +14,12 @@
             <field name="parent_id" ref="website.main_menu"/>
         </record>
 
+        <record id="app_management_menu" model="website.menu">
+            <field name="name">App Management</field>
+            <field name="url">/app-management</field>
+            <field name="parent_id" ref="website.main_menu"/>
+        </record>
+
         <record id="pricing_menu" model="website.menu">
             <field name="name">Pricing</field>
             <field name="url">/</field>

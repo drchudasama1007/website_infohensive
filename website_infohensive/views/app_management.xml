@@ -193,7 +193,7 @@
                     </div>
                 </section>
             </div>
-            <div class="oe_structure">
+            <div class="oe_structure app_phone d-none">
                 <section class="app_management"
                          style="background-image: url('/website_infohensive/static/src/img/app.png');">
                     <div class="container">

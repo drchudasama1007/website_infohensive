@@ -2,448 +2,335 @@
 
     <!-- ========== BLOG ========== -->
     <template id="blog_template" inherit_id="website_blog.index">
-         <xpath expr="//div[@id='wrap']" position="replace">
+        <xpath expr="//div[@id='wrap']" position="replace">
             <div class="oe_structure">
-            <section class="blog">
-                <div class="container">
-                    <div class="col-md-12 col-sm-12 text-center pt40">
-                        <h1 class="font-weight-bold">Infohensive Awarebess Blog</h1>
-                        <p class="pt8">
-                            Insights on how to change behavior and reduse the human risk
-                        </p>
-                    </div>
-                    <div class="row pt16">
-                        <div class="col-md-8 col-sm-8 blog_8">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
+                <section class="blog">
+                    <div class="container">
+                        <div class="col-md-12 col-sm-12 text-center pt40">
+                            <h1 class="font-weight-bold">Infohensive Awarebess Blog</h1>
+                            <p class="pt8">
+                                Insights on how to change behavior and reduse the human risk
+                            </p>
+                        </div>
+                        <div class="row pt16">
+                            <div class="col-md-8 col-sm-8 blog_8">
+                                <div class="row">
+                                    <t t-foreach="blog_posts" t-as="blog">
+                                        <div class="col-md-6 col-sm-6 pb40">
+                                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                                <img src="/website_infohensive/static/src/img/blog.png"
+                                                     style="width:100%"/>
+                                                <div class="pt16">
+                                                    <h4 class="pl-2 font-weight-bold">
+                                                        <t t-if="len(blog.name) &gt; 21">
+                                                            <t t-esc="blog.name[:21]"/>
+                                                            ...
+                                                        </t>
+                                                        <t t-else="">
+                                                            <t t-esc="blog.name"/>
+                                                        </t>
+                                                    </h4>
+                                                    <p class="p_i pl-2">
+                                                        <i class="fa fa-calendar"/>
+                                                        <span>
+                                                            <t t-set="post_date" t-value="blog.post_date.date()"/>
+                                                            <t t-esc="blog.post_date.strftime('%B %d, %Y')"/>
+<!--                                                            <t t-esc="post_date"/>-->
+<!--                                                            <t t-esc="datetime.datetime.strptime(blog.post_date, '%Y-%m-%d %H:%M:%S').date().strftime('%d %B %Y')"/>-->
+                                                        </span>
+                                                    </p>
+                                                    <p class="p_content pl-2">
+                                                        <t t-esc="blog.subtitle"/>
+                                                    </p>
+                                                    <p class="pl-2">
+                                                        <a t-attf-href="/blog/#{blog.blog_id.id}/post/#{blog.id}"
+                                                           class="font-weight-bold"
+                                                           style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                                            Continue reading...
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </t>
                                 </div>
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 blog_4" id="blog_right_column">
+                                <section class="mt32">
+                                    <h4>About us</h4>
+                                    <p>
+                                        Write a small text here for when <b>new visitors</b> find your website
+                                        through your <b>blog entries</b>, referenced in Google.
+                                    </p>
+                                </section>
+                                <section class="mt32">
+                                    <h4>Stay updated :</h4>
+                                    <t t-if="blog">
+                                        <t t-call="website_mail.follow">
+                                            <t t-set="email" t-value="user_id.email"/>
+                                            <t t-set="object" t-value="blog"/>
+                                        </t>
+                                    </t>
+                                    <p class="text-muted mb0 mt16">
+                                        Participate on our social stream.
+                                    </p>
+                                    <h2 class="mt4">
+                                        <a t-att-href="website.social_facebook" t-if="website.social_facebook"
+                                           aria-label="Facebook" title="Facebook">
+                                            <i class="fa fa-facebook-square"/>
+                                        </a>
+                                        <a t-att-href="website.social_twitter" t-if="website.social_twitter"
+                                           aria-label="Twitter" title="Twitter">
+                                            <i class="fa fa-twitter"/>
+                                        </a>
+                                        <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"
+                                           aria-label="LinkedIn" title="LinkedIn">
+                                            <i class="fa fa-linkedin"/>
+                                        </a>
+                                        <a t-att-href="website.social_youtube" t-if="website.social_youtube"
+                                           aria-label="Youtube" title="Youtube">
+                                            <i class="fa fa-youtube-play"/>
+                                        </a>
+                                        <a t-att-href="website.social_googleplus" t-if="website.social_googleplus"
+                                           aria-label="Google Plus" title="Google Plus">
+                                            <i class="fa fa-google-plus-square"/>
+                                        </a>
+                                        <a t-att-href="website.social_github" t-if="website.social_github"
+                                           aria-label="Github" title="Github">
+                                            <i class="fa fa-github"/>
+                                        </a>
+                                        <a t-att-href="website.social_instagram" t-if="website.social_instagram"
+                                           aria-label="Instagram" title="Instagram">
+                                            <i class="fa fa-instagram"/>
+                                        </a>
+                                        <a t-att-href="'/blog/%s/feed' % (blog.id)" aria-label="RSS" title="RSS">
+                                            <i class="fa fa-rss-square"/>
+                                        </a>
+                                    </h2>
+                                </section>
+                                <h4>Our Blogs</h4>
+                                <ul class="nav nav-pills flex-column">
+                                    <t t-foreach="blogs" t-as="nav_blog">
+                                        <li class="nav-item">
+                                            <a t-attf-href="#{blog_url(blog=nav_blog, tag=False, date_begin=False, date_end=False)}"
+                                               t-attf-class="nav-link#{nav_blog.id == blog.id and ' active' or ''}">
+                                                <span t-field="nav_blog.name"/>
+                                            </a>
+                                        </li>
+                                    </t>
+                                </ul>
+                                <section class="mt32 blog_tags">
+                                    <h4>Tags</h4>
+                                    <t t-foreach="tag_category" t-as="nav_tag_category">
+                                        <t t-call="website_blog.tag_category">
+                                            <t t-set='categ_title' t-value="nav_tag_category.name"/>
+                                            <t t-set='tags' t-value='nav_tag_category.tag_ids'/>
+                                        </t>
+                                    </t>
+                                    <t t-call="website_blog.tag_category">
+                                        <t t-set='hide_title' t-value='not len(tag_category)'/>
+                                        <t t-set='categ_title'>Others</t>
+                                        <t t-set='tags' t-value='other_tags'/>
+                                    </t>
+                                </section>
+                                <section class="mt32">
+                                    <h4>Archives</h4>
+                                    <ul class="nav nav-pills flex-column">
+                                        <t t-foreach="nav_list" t-as="year">
+                                            <li data-toggle="collapse" t-att-data-target="'#b_' + year"
+                                                aria-expanded="false" class="nav-item blog_post_year_collapse mt8">
+                                                <i t-attf-class="fa #{'fa-chevron-down' if not date and year_index == 0 else 'fa-chevron-right'} mr4"
+                                                   role="img" aria-label="Next year" title="Next year"/>
+                                                <span t-esc="year"/>
+                                            </li>
+                                            <ul t-attf-class="blog_post_year collapse nav nav-pills flex-column #{not date and year_index == 0 and 'in'}"
+                                                t-att-id="'b_' + year" role="menu">
+                                                <t t-foreach="nav_list[year]" t-as="months">
+                                                    <li t-if="months['date_begin'] == date" class="nav-item">
+                                                        <a role="menuitem" rel="nofollow" t-ignore="True"
+                                                           t-attf-href="#{blog_url(date_begin=False, date_end=False)}"
+                                                           class="nav-link active">
+                                                            <t t-esc="months['month']"/>
+                                                            <span class="float-right badge badge-pill"
+                                                                  t-esc="months['post_date_count']"/>
+                                                        </a>
+                                                    </li>
+                                                    <li t-else="1" class="nav-item">
+                                                        <a role="menuitem" rel="nofollow" t-ignore="True"
+                                                           t-attf-href="#{blog_url(date_begin=months['date_begin'], date_end=months['date_end'])}"
+                                                           class="nav-link">
+                                                            <t t-esc="months['month']"/>
+                                                            <span class="float-right badge badge-pill"
+                                                                  t-esc="months['post_date_count']"/>
+                                                        </a>
+                                                    </li>
+                                                </t>
+                                            </ul>
+                                        </t>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="blog-phone d-none">
+                    <div class="container">
+                        <div class="col-md-12 col-sm-12 text-center pt40">
+                            <h1 class="font-weight-bold">Infohensive Awarebess Blog</h1>
+                            <p class="pt8" style="font-size: 16px;">
+                                Insights on how to change behavior and reduse the human risk
+                            </p>
+                        </div>
+                        <div class="row pt16">
+                            <div class="col-12 blog_4">
+                                <p>
+                                    <input type="search" placeholder="Search..."/>
+                                    <i class="fa fa-search"/>
+                                </p>
+                            </div>
+                            <div class="col-12 pb32 blog_8">
+                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
+                                    <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
+                                    <div class="pt16">
+                                        <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
+                                        <p class="p_i pl-2">
+                                            <i class="fa fa-calendar"/>
+                                            <span>February 2nd, 2019</span>
+                                        </p>
+                                        <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod
+                                            tempor invidunt ut labore lorem sit.
+                                        </p>
+                                        <p class="pl-2">
+                                            <a href="#" class="font-weight-bold"
+                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                                Continue reading...
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
+                            <div class="col-12 pb32 blog_8">
+                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
+                                    <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
+                                    <div class="pt16">
+                                        <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
+                                        <p class="p_i pl-2">
+                                            <i class="fa fa-calendar"/>
+                                            <span>February 2nd, 2019</span>
+                                        </p>
+                                        <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod
+                                            tempor invidunt ut labore lorem sit.
+                                        </p>
+                                        <p class="pl-2">
+                                            <a href="#" class="font-weight-bold"
+                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                                Continue reading...
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
+                            <div class="col-12 pb32 blog_8">
+                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
+                                    <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
+                                    <div class="pt16">
+                                        <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
+                                        <p class="p_i pl-2">
+                                            <i class="fa fa-calendar"/>
+                                            <span>February 2nd, 2019</span>
+                                        </p>
+                                        <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                            elitr, sed diam nonumy eirmod
+                                            tempor invidunt ut labore lorem sit.
+                                        </p>
+                                        <p class="pl-2">
+                                            <a href="#" class="font-weight-bold"
+                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                                Continue reading...
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 pb40">
-                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-12 blog_4 pb32">
+                                <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
+                                    Categories
+                                </h4>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Assets Management
+                                </p>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Risk Management
+                                </p>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Service Management
+                                </p>
+                                <p class="pb8" style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Security Operations
+                                </p>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Awareness
+                                </p>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Governance
+                                </p>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Disaster Recovery
+                                </p>
+                                <p>
+                                    Bussiness Continuity
+                                </p>
+                                <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
+                                    Recent Posts
+                                </h4>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    How Artificial Intelligence Benefits
+                                    <br/>
+                                    Cyber Security Awareness Training
+                                </p>
+                                <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
+                                    Don't Be Flood By A Spoofing Attack
+                                    <br/>
+                                    Accesibility Features Across Entire
+                                    <br/>
+                                    Security Awareness Training Library
+                                </p>
+                                <p>
+                                    Why Accesibility is Crucial to
+                                    <br/>
+                                    Successful Security Awareness
+                                    <br/>
+                                    Training
+                                </p>
+                                <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
+                                    Tags
+                                </h4>
+                                <a type="button" href="#" class="btn text-black blog_4_btn mb8">
+                                    Info
+                                </a>
+                                <a type="button" href="#" class="btn text-black blog_4_btn mb8">
+                                    Security
+                                </a>
+                                <a type="button" href="#" class="btn text-black blog_4_btn mb8">
+                                    Infohensive
+                                </a>
+                                <a type="button" href="#" class="btn text-black blog_4_btn mb8">
+                                    Infohensive Awareness Blog
+                                </a>
+                                <a type="button" href="#" class="btn text-black blog_4_btn mb8">
+                                    Infohensive Security Blog
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-4 blog_4">
-                            <h4 class="font-weight-bold" style="color:#666565">
-                                Search
-                            </h4>
-                            <p>
-                                <input type="search" placeholder="Search..."/>
-                                <i class="fa fa-search"/>
-                            </p>
-                            <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
-                                Categories
-                            </h4>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Assets Management
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Risk Management
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Service Management
-                            </p>
-                            <p class="pb8" style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Security Operations
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Awareness
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Governance
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Disaster Recovery
-                            </p>
-                            <p>
-                                Bussiness Continuity
-                            </p>
-                            <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
-                                Recent Posts
-                            </h4>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                How Artificial Intelligence Benefits
-                                <br/>
-                                Cyber Security Awareness Training
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Don't Be Flood By A Spoofing Attack
-                                <br/>
-                                Accesibility Features Across Entire
-                                <br/>
-                                Security Awareness Training Library
-                            </p>
-                            <p>
-                                Why Accesibility is Crucial to
-                                <br/>
-                                Successful Security Awareness
-                                <br/>
-                                Training
-                            </p>
-                            <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
-                                Tags
-                            </h4>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Info
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Security
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Infohensive
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Infohensive Awareness Blog
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Infohensive Security Blog
-                            </a>
-                        </div>
                     </div>
-                </div>
-            </section>
-            <section class="blog-phone d-none">
-                <div class="container">
-                    <div class="col-md-12 col-sm-12 text-center pt40">
-                        <h1 class="font-weight-bold">Infohensive Awarebess Blog</h1>
-                        <p class="pt8" style="font-size: 16px;">
-                            Insights on how to change behavior and reduse the human risk
-                        </p>
-                    </div>
-                    <div class="row pt16">
-                        <div class="col-12 blog_4">
-                            <p>
-                                <input type="search" placeholder="Search..."/>
-                                <i class="fa fa-search"/>
-                            </p>
-                        </div>
-                        <div class="col-12 pb32 blog_8">
-                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div class="col-12 pb32 blog_8">
-                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div class="col-12 pb32 blog_8">
-                            <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                        <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                        <!--                                        <div class="pt16" style="background-image: url('/web/image/website.s_cover_default_image');">-->
-                                        <div class="pt16">
-                                            <h4 class="pl-2 font-weight-bold">Secure Software Ever!</h4>
-                                            <p class="p_i pl-2">
-                                                <i class="fa fa-calendar"/>
-                                                <span>February 2nd, 2019</span>
-                                            </p>
-                                            <p class="p_content pl-2">Lorem ipsum dolor sit amet, consetetur sadipscing
-                                                elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore lorem sit.
-                                            </p>
-                                            <p class="pl-2">
-                                                <a href="#" class="font-weight-bold"
-                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                                    Continue reading...
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div class="col-12 blog_4 pb32">
-                            <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
-                                Categories
-                            </h4>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Assets Management
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Risk Management
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Service Management
-                            </p>
-                            <p class="pb8" style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Security Operations
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Awareness
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Governance
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Disaster Recovery
-                            </p>
-                            <p>
-                                Bussiness Continuity
-                            </p>
-                            <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
-                                Recent Posts
-                            </h4>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                How Artificial Intelligence Benefits
-                                <br/>
-                                Cyber Security Awareness Training
-                            </p>
-                            <p style="border-bottom: 1px solid #d8d5d5;padding-bottom:12px">
-                                Don't Be Flood By A Spoofing Attack
-                                <br/>
-                                Accesibility Features Across Entire
-                                <br/>
-                                Security Awareness Training Library
-                            </p>
-                            <p>
-                                Why Accesibility is Crucial to
-                                <br/>
-                                Successful Security Awareness
-                                <br/>
-                                Training
-                            </p>
-                            <h4 class="font-weight-bold pt16 pb8" style="color:#666565">
-                                Tags
-                            </h4>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Info
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Security
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Infohensive
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Infohensive Awareness Blog
-                            </a>
-                            <a type="button" href="#" class="btn text-black blog_4_btn mb8">
-                                Infohensive Security Blog
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
             </div>
-         </xpath>
+        </xpath>
     </template>
 
 </odoo>

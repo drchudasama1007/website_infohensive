@@ -8,12 +8,21 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-4" style="border-right: 2px solid #f1f1f1;">
                             <h5 class="font-weight-bold pb16 pt32">Our Platform</h5>
-                            <p><a href="/framework">Framework</a></p>
-                            <p><a href="/erp-platform">InfoSec ERP Platform</a></p>
-                            <p><a href="#">About</a></p>
+                            <p>
+                                <a href="/framework">Framework</a>
+                            </p>
+                            <p>
+                                <a href="/erp-platform">InfoSec ERP Platform</a>
+                            </p>
+                            <p>
+                                <a href="#">About</a>
+                            </p>
                         </div>
                         <div class="col-md-4 col-sm-4 text-center" style="border-right: 2px solid #f1f1f1;">
-                            <img class="pt32" src="/website_infohensive/static/src/img/logo.png"/>
+                            <a href="/" class="navbar-brand logo pt32">
+                                <img t-att-src="'/logo.png?company=%s' % res_company.id"
+                                     t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                            </a>
                             <h5 class="font-weight-bold pb16">Our Office Address</h5>
                             <p>125/4A KDA Eve, Canada</p>
                             <p>+8801254667877</p>
@@ -21,10 +30,18 @@
                         </div>
                         <div class="col-md-4 col-sm-4 text-right">
                             <h5 class="pt32 font-weight-bold pb16">Resources</h5>
-                            <p><a href="/blog">Blog</a></p>
-                            <p><a href="#">Knowledge Base</a></p>
-                            <p><a href="#">F&amp;Qs</a></p>
-                            <p><a href="#">Support</a></p>
+                            <p>
+                                <a href="/blog">Blog</a>
+                            </p>
+                            <p>
+                                <a href="#">Knowledge Base</a>
+                            </p>
+                            <p>
+                                <a href="#">F&amp;Qs</a>
+                            </p>
+                            <p>
+                                <a href="#">Support</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -32,7 +49,10 @@
             <section class="footer-phone d-none bg-white pb32 pt32">
                 <div class="container">
                     <div class="col-sm-12 col-12 text-center">
-                        <img class="pt32" src="/website_infohensive/static/src/img/logo.png"/>
+                        <a href="/" class="navbar-brand logo pt32">
+                            <img t-att-src="'/logo.png?company=%s' % res_company.id"
+                                 t-att-alt="'Logo of %s' % res_company.name" t-att-title="res_company.name"/>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-sm-12 col-12 pt16">

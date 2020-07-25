@@ -1,21 +1,3 @@
-/* ---------Rubik Font--------- */
-
-@font-face {
-    font-family: 'Rubik-Regular';
-    src: url('/fonts/Rubik-Regular.ttf') format('ttf'),
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-body{
-    font-family: 'Rubik-Regular' !important;
-}
-
-h1, h2, h3, h4, h5, h6, span, p, div, a{
-    font-family: 'Rubik-Regular' !important;
-}
-
 /* ---------container set css--------- */
 
 .container{
@@ -61,6 +43,11 @@ h1, h2, h3, h4, h5, h6, span, p, div, a{
 
 /* ---------header css--------- */
 
+#top_menu_collapse > ul > li > a.active{
+    color: #3c78d8 !important;
+    padding-bottom: 19px;
+    border-bottom: 2px solid #3c78d8 !important;
+}
 .header .top-menu i{
     background: #3c78d8;
     color: white;
@@ -112,7 +99,7 @@ h1, h2, h3, h4, h5, h6, span, p, div, a{
 .mn_hight{
     height: 170px;
 }
-a{
+a, a:hover{
     text-decoration: none;
 }
 .demo_icon{
@@ -120,3 +107,4 @@ a{
     color: white;
     padding: 7px 7px;
 }
+
