@@ -8,13 +8,16 @@
                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 pt152">
-                                <h1 class="font-weight-bold">ERP Platform</h1>
-                                <p class="pt8">Easy to implement Information Security controls into all parts of the
-                                    business.
-                                </p>
+                            <div class="col-md-6 col-sm-6 pt72">
+                                <h1 class="font-weight-bold">Framework</h1>
+                                <p class="pt8 mb0">A Simple, powerfull and comprehensiv approach to</p>
+                                <p class="mt0">information security.</p>
+                                <h1 class="pt16 font-weight-bold">ERP Platform</h1>
+                                <p class="pt8 mb0">A highly customisable and easy to use ERP for</p>
+                                <p class="mt0 mb0">implementing Information Security Controls baked into all</p>
+                                <p class="mt0">parts of the business.</p>
                             </div>
-                            <div class="col-md-6 col-sm-6 pt32 pb32">
+                            <div class="col-md-6 col-sm-6 pt32 pb16">
                                 <img src="/website_infohensive/static/src/img/office illustration.png"
                                      style="width:100%;height: 400px;"/>
                             </div>
@@ -22,7 +25,7 @@
                     </div>
                 </section>
                 <section class="pb24"
-                         style="background-image: url('/website_infohensive/static/src/img/erp.png');box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
+                         style="background-image: url('/website_infohensive/static/src/img/erp.png');box-shadow: 1px 1px 10px rgba(172, 175, 177, 1);">
                     <div class="container">
                         <div class="col-md-12 col-md-12">
                             <h1 class="font-weight-bold pt32 text-center pb16">ERP Platform</h1>
@@ -36,14 +39,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="/app-management">
                                                 <img src="/website_infohensive/static/src/img/bg_img1.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoCMDB</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img2.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">info Asset</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -55,14 +62,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img3.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoControl</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img4.png"
                                                      class="erp_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">infoRisk</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -74,14 +85,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoAware</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_2.png"
                                                      class="erp_img2 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">infoPhising</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -95,50 +110,66 @@
                                         </div>
                                         <div class="row pb16 border-bottom">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img7.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoIncident</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img8.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">infoProblem</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row pt16 pb16 border-bottom">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img11.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoCatalog</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img12.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">infoKnowledge</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row pt16 pb16 border-bottom">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img9.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoChange</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img10.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">infoRequest</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row pt16">
                                             <div class="col-md-6 col-sm-6 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/infoSLA.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">infoSLA</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/infoQA.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">infoQ&amp;A</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -154,68 +185,92 @@
                                         </div>
                                         <div class="row pb8 border-bottom">
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/crm.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">CRM</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/invoice.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">Invoicing</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/sale.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Sales</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/account.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Accounting</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row pt8 pb8 border-bottom">
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/project.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Project</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/inventory.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">Inventory</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/purchase.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Purchase</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/email.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Email</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row pt8">
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/timesheet.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Timesheets</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/expense.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2">Expenses</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 border-right">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/manu.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Manufacturing</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/event.png"
                                                      class="odoo_app_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2">Events</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -266,7 +321,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-md-12 pt24 pb16 text-center">
-                            <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8"
+                            <a type="button" href="/odoo.com" class="btn text-white pl-3 pr-3 pt8 pb8"
                                style="background:#875a7b">
                                 More on Odoo
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
@@ -307,14 +362,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="/app-management">
                                                 <img src="/website_infohensive/static/src/img/bg_img1.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoCMDB</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img2.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">info Asset</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -326,14 +385,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img3.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoControl</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img4.png"
                                                      class="erp_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoRisk</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -347,50 +410,66 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img7.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoIncident</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img8.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoProblem</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img11.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoCatalog</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img12.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoKnowledge</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img9.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoChange</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img10.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoRequest</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/infoSLA.png"
                                                      class="erp_img1 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoSLA</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/infoQA.png"
                                                      class="erp_img1 pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoQ&amp;A</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -406,14 +485,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img3.png"
                                                      class="erp_img pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoControl</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/bg_img4.png"
                                                      class="erp_img pl-2 pr-2 pt8" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoRisk</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -425,24 +508,32 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoEmployee</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_2.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoExpenses</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 border-bottom pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoLeave</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_2.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoTimesheet</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -458,9 +549,11 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoAccounting</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -476,14 +569,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoPurchase</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoInventory</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -499,14 +596,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoCRM</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoSales</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -522,14 +623,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 col-sm-6 border-bottom pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoDeshboard</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-6 col-sm-6 pt8 pb8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/img/aware_1.png"
                                                      class="erp_img2 pl-2 pr-2 pt8 pb8"/>
                                                 <span class="font-weight-bold ml-2 erp_font">infoSales</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -545,68 +650,92 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/crm.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">CRM</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/invoice.png"
                                                      class="odoo_app_img" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Invoicing</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/sale.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Sales</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/account.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Accounting</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/project.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Project</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/inventory.png"
                                                      class="odoo_app_img" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Inventory</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/purchase.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Purchase</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/email.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Email Marketing</span>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/timesheet.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Timesheets</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/expense.png"
                                                      class="odoo_app_img" style="padding-bottom: 4px;"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Expenses</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8 pb8 border-bottom">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/manu.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Manufacturing</span>
+                                                </a>
                                             </div>
                                             <div class="col-md-3 col-sm-3 pt8">
+                                                <a href="#">
                                                 <img src="/website_infohensive/static/src/imgApp/event.png"
                                                      class="odoo_app_img"/>
                                                 <span class="font-weight-bold ml-2 erp_font">Events</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -648,7 +777,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-md-12 pt24 pb16 text-center">
-                            <a type="button" href="#" class="btn text-white pl-3 pr-3 pt8 pb8 btn-block"
+                            <a type="button" href="/odoo.com" class="btn text-white pl-3 pr-3 pt8 pb8 btn-block"
                                style="background:#875a7b">
                                 More on Odoo
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>

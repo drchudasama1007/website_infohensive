@@ -5,11 +5,11 @@
         <xpath expr="//header" position="replace">
             <header class="header">
                 <div class="col-md-12 col-sm-12 top-menu col-sm-12 container text-right pt8 pb8">
-                    <a type="button" href="/contactus" class="btn">Contact us
+                    <a type="button" href="/contactus" class="btn contact_header_btn">Contact us
                     </a>
-                    <i class="fa fa-linkedin ml-2 demo_icon"/>
-                    <i class="fa fa-youtube-play ml-2 demo_icon"/>
-                    <i class="fa fa-twitter ml-2 demo_icon"/>
+                    <a t-if="website.social_facebook" t-att-href="website.social_linkedin"><i class="fa fa-linkedin ml-2 demo_icon"/></a>
+                    <a t-if="website.social_facebook" t-att-href="website.social_youtube"><i class="fa fa-youtube-play ml-2 demo_icon"/></a>
+                    <a t-if="website.social_facebook" t-att-href="website.social_twitter"><i class="fa fa-twitter ml-2 demo_icon"/></a>
                 </div>
                 <nav class="navbar navbar-expand-md navbar-light bg-light"
                      style="background: white !important;box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
@@ -26,7 +26,7 @@
                             <!-- FIXME We want menu to open to the right by default (except cases handled in JS) -->
                             <ul class="nav navbar-nav ml-auto text-right pt8 pb8" id="top_menu">
                                 <t t-foreach="website.menu_id.child_id" t-as="submenu">
-                                    <li t-if="submenu.is_visible and not has_visible_submenu" class="nav-item mt8 pr-4">
+                                    <li t-if="submenu.is_visible and not has_visible_submenu" class="nav-item mt8 pl-4">
                                         <a t-att-href="submenu.clean_url()"
                                            t-attf-class="menu-item #{'active' if submenu.clean_url() and unslug_url(request.httprequest.path) == unslug_url(submenu.clean_url()) else ''}"
                                            role="menuitem"
@@ -36,11 +36,11 @@
                                         </a>
                                     </li>
                                 </t>
-                                <li class="nav-item">
-                                    <a type="button" href="#" class="btn demo"
-                                       style="background: #3c78d8;color: white;padding: 5px 10px;">Demo
-                                    </a>
-                                </li>
+<!--                                <li class="nav-item">-->
+<!--                                    <a type="button" href="#" class="btn demo"-->
+<!--                                       style="background: #3c78d8;color: white;padding: 5px 10px;">Demo-->
+<!--                                    </a>-->
+<!--                                </li>-->
                             </ul>
                         </div>
                     </div>

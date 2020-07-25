@@ -54,7 +54,7 @@
     padding: 3px;
     border-radius: 3px;
 }
-.header .top-menu a{
+.header .top-menu .contact_header_btn{
     background: #3c78d8;
     color: white;
     font-size: 10px;

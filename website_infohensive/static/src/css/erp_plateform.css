@@ -37,6 +37,9 @@
     border: 2px solid #875a7b;
     border-radius: 80px;
 }
+.erp_div h6, .erp_div a{
+    color: black;
+}
 
 /* ---------mobile ERP Platform css--------- */
 

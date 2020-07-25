@@ -14,8 +14,8 @@
                             <p class="pt8 mb0">A highly customisable and easy to use ERP for</p>
                             <p class="mt0 mb0">implementing Information Security Controls baked into all</p>
                             <p class="mt0">parts of the business.</p>
-                            <button class="btn text-white" style="background: #3c78d8;">Framework</button>
-                            <button class="btn ml-3 text-white" style="background: #3c78d8;">ERP Platform</button>
+                            <a href="/framework" class="btn text-white" style="background: #3c78d8;">Framework</a>
+                            <a href="/erp-platform" class="btn ml-3 text-white" style="background: #3c78d8;">ERP Platform</a>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-md-12 pt40 pb16 text-center">
-                            <a type="button" href="/erp-platfrom" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
+                            <a type="button" href="/framework" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
                                 More on Solution
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
                             </a>
@@ -609,7 +609,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-md-12 pt24 text-center">
-                            <a type="button" href="/erp-platfrom" class="btn text-white pl-3 pr-3 btn-block pt16 pb16 bg-black" style="font-size: 17px;">
+                            <a type="button" href="/framework" class="btn text-white pl-3 pr-3 btn-block pt16 pb16 bg-black" style="font-size: 17px;">
                                 More on Solution
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
                             </a>
