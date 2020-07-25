@@ -279,72 +279,117 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 col-sm-4 pb40">
-                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                    <div class="pt16 mn_hight"
-                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
-                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software
-                                            Ever!
-                                        </h4>
-                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,
-                                            consetetur
-                                            sadipscing
-                                            elitr, sed diam nonumy eirmod
-                                            tempor invidunt ut labore lorem sit.
-                                        </p>
-                                        <p class="pl-2">
-                                            <a href="#" class="font-weight-bold"
-                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                            </a>
-                                        </p>
+                            <t t-foreach="blogs" t-as="blog">
+                                <div class="col-md-4 col-sm-4 pb40">
+                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                        <img src="/website_infohensive/static/src/img/blog.png"
+                                             style="width:100%"/>
+                                        <div class="pt16">
+                                            <h4 class="pl-2 font-weight-bold">
+                                                <t t-if="len(blog.name) &gt; 21">
+                                                    <t t-esc="blog.name[:21]"/>
+                                                    ...
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-esc="blog.name"/>
+                                                </t>
+                                            </h4>
+                                            <p class="p_i pl-2">
+                                                <i class="fa fa-calendar"/>
+                                                <span>
+                                                    <t t-set="post_date" t-value="blog.post_date.date()"/>
+                                                    <t t-esc="blog.post_date.strftime('%B %d, %Y')"/>
+                                                    <!--                                                            <t t-esc="post_date"/>-->
+                                                    <!--                                                            <t t-esc="datetime.datetime.strptime(blog.post_date, '%Y-%m-%d %H:%M:%S').date().strftime('%d %B %Y')"/>-->
+                                                </span>
+                                            </p>
+                                            <p class="p_content pl-2">
+                                                <t t-if="len(blog.subtitle) &gt; 100">
+                                                    <t t-esc="blog.subtitle[:100]"/>
+                                                    ...
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-esc="blog.subtitle"/>
+                                                </t>
+<!--                                                <t t-esc="blog.subtitle"/>-->
+                                            </p>
+                                            <p class="pl-2">
+                                                <a t-attf-href="/blog/#{blog.blog_id.id}/post/#{blog.id}"
+                                                   class="font-weight-bold"
+                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                                    Continue reading...
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 pb40">
-                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                    <div class="pt16 mn_hight"
-                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
-                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software
-                                            Ever!
-                                        </h4>
-                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,
-                                            consetetur
-                                            sadipscing
-                                            elitr, sed diam nonumy eirmod
-                                            tempor invidunt ut labore lorem sit.
-                                        </p>
-                                        <p class="pl-2">
-                                            <a href="#" class="font-weight-bold"
-                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 pb40">
-                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                    <div class="pt16 mn_hight"
-                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
-                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software
-                                            Ever!
-                                        </h4>
-                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,
-                                            consetetur
-                                            sadipscing
-                                            elitr, sed diam nonumy eirmod
-                                            tempor invidunt ut labore lorem sit.
-                                        </p>
-                                        <p class="pl-2">
-                                            <a href="#" class="font-weight-bold"
-                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </t>
+                            <!--                            <div class="col-md-4 col-sm-4 pb40">-->
+                            <!--                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">-->
+                            <!--                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>-->
+                            <!--                                    <div class="pt16 mn_hight"-->
+                            <!--                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">-->
+                            <!--                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software-->
+                            <!--                                            Ever!-->
+                            <!--                                        </h4>-->
+                            <!--                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,-->
+                            <!--                                            consetetur-->
+                            <!--                                            sadipscing-->
+                            <!--                                            elitr, sed diam nonumy eirmod-->
+                            <!--                                            tempor invidunt ut labore lorem sit.-->
+                            <!--                                        </p>-->
+                            <!--                                        <p class="pl-2">-->
+                            <!--                                            <a href="#" class="font-weight-bold"-->
+                            <!--                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">-->
+                            <!--                                            </a>-->
+                            <!--                                        </p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <div class="col-md-4 col-sm-4 pb40">-->
+                            <!--                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">-->
+                            <!--                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>-->
+                            <!--                                    <div class="pt16 mn_hight"-->
+                            <!--                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">-->
+                            <!--                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software-->
+                            <!--                                            Ever!-->
+                            <!--                                        </h4>-->
+                            <!--                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,-->
+                            <!--                                            consetetur-->
+                            <!--                                            sadipscing-->
+                            <!--                                            elitr, sed diam nonumy eirmod-->
+                            <!--                                            tempor invidunt ut labore lorem sit.-->
+                            <!--                                        </p>-->
+                            <!--                                        <p class="pl-2">-->
+                            <!--                                            <a href="#" class="font-weight-bold"-->
+                            <!--                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">-->
+                            <!--                                            </a>-->
+                            <!--                                        </p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <div class="col-md-4 col-sm-4 pb40">-->
+                            <!--                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">-->
+                            <!--                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>-->
+                            <!--                                    <div class="pt16 mn_hight"-->
+                            <!--                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">-->
+                            <!--                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software-->
+                            <!--                                            Ever!-->
+                            <!--                                        </h4>-->
+                            <!--                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,-->
+                            <!--                                            consetetur-->
+                            <!--                                            sadipscing-->
+                            <!--                                            elitr, sed diam nonumy eirmod-->
+                            <!--                                            tempor invidunt ut labore lorem sit.-->
+                            <!--                                        </p>-->
+                            <!--                                        <p class="pl-2">-->
+                            <!--                                            <a href="#" class="font-weight-bold"-->
+                            <!--                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">-->
+                            <!--                                            </a>-->
+                            <!--                                        </p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
                         </div>
                     </div>
                 </section>
@@ -624,72 +669,117 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 col-sm-4 pb16">
-                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                    <div class="pt16 mn_hight"
-                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
-                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software
-                                            Ever!
-                                        </h4>
-                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,
-                                            consetetur
-                                            sadipscing
-                                            elitr, sed diam nonumy eirmod
-                                            tempor invidunt ut labore lorem sit.
-                                        </p>
-                                        <p class="pl-2">
-                                            <a href="#" class="font-weight-bold"
-                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                            </a>
-                                        </p>
+                            <t t-foreach="blogs" t-as="blog">
+                                <div class="col-md-4 col-sm-4 pb40">
+                                    <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
+                                        <img src="/website_infohensive/static/src/img/blog.png"
+                                             style="width:100%"/>
+                                        <div class="pt16">
+                                            <h4 class="pl-2 font-weight-bold">
+                                                <t t-if="len(blog.name) &gt; 21">
+                                                    <t t-esc="blog.name[:21]"/>
+                                                    ...
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-esc="blog.name"/>
+                                                </t>
+                                            </h4>
+                                            <p class="p_i pl-2">
+                                                <i class="fa fa-calendar"/>
+                                                <span>
+                                                    <t t-set="post_date" t-value="blog.post_date.date()"/>
+                                                    <t t-esc="blog.post_date.strftime('%B %d, %Y')"/>
+                                                    <!--                                                            <t t-esc="post_date"/>-->
+                                                    <!--                                                            <t t-esc="datetime.datetime.strptime(blog.post_date, '%Y-%m-%d %H:%M:%S').date().strftime('%d %B %Y')"/>-->
+                                                </span>
+                                            </p>
+                                            <p class="p_content pl-2">
+                                                <t t-if="len(blog.subtitle) &gt; 100">
+                                                    <t t-esc="blog.subtitle[:100]"/>
+                                                    ...
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-esc="blog.subtitle"/>
+                                                </t>
+<!--                                                <t t-esc="blog.subtitle"/>-->
+                                            </p>
+                                            <p class="pl-2">
+                                                <a t-attf-href="/blog/#{blog.blog_id.id}/post/#{blog.id}"
+                                                   class="font-weight-bold"
+                                                   style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
+                                                    Continue reading...
+                                                </a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 pb16">
-                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                    <div class="pt16 mn_hight"
-                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
-                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software
-                                            Ever!
-                                        </h4>
-                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,
-                                            consetetur
-                                            sadipscing
-                                            elitr, sed diam nonumy eirmod
-                                            tempor invidunt ut labore lorem sit.
-                                        </p>
-                                        <p class="pl-2">
-                                            <a href="#" class="font-weight-bold"
-                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 pb16">
-                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">
-                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>
-                                    <div class="pt16 mn_hight"
-                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">
-                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software
-                                            Ever!
-                                        </h4>
-                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,
-                                            consetetur
-                                            sadipscing
-                                            elitr, sed diam nonumy eirmod
-                                            tempor invidunt ut labore lorem sit.
-                                        </p>
-                                        <p class="pl-2">
-                                            <a href="#" class="font-weight-bold"
-                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </t>
+                            <!--                            <div class="col-md-4 col-sm-4 pb40">-->
+                            <!--                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">-->
+                            <!--                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>-->
+                            <!--                                    <div class="pt16 mn_hight"-->
+                            <!--                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">-->
+                            <!--                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software-->
+                            <!--                                            Ever!-->
+                            <!--                                        </h4>-->
+                            <!--                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,-->
+                            <!--                                            consetetur-->
+                            <!--                                            sadipscing-->
+                            <!--                                            elitr, sed diam nonumy eirmod-->
+                            <!--                                            tempor invidunt ut labore lorem sit.-->
+                            <!--                                        </p>-->
+                            <!--                                        <p class="pl-2">-->
+                            <!--                                            <a href="#" class="font-weight-bold"-->
+                            <!--                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">-->
+                            <!--                                            </a>-->
+                            <!--                                        </p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <div class="col-md-4 col-sm-4 pb40">-->
+                            <!--                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">-->
+                            <!--                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>-->
+                            <!--                                    <div class="pt16 mn_hight"-->
+                            <!--                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">-->
+                            <!--                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software-->
+                            <!--                                            Ever!-->
+                            <!--                                        </h4>-->
+                            <!--                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,-->
+                            <!--                                            consetetur-->
+                            <!--                                            sadipscing-->
+                            <!--                                            elitr, sed diam nonumy eirmod-->
+                            <!--                                            tempor invidunt ut labore lorem sit.-->
+                            <!--                                        </p>-->
+                            <!--                                        <p class="pl-2">-->
+                            <!--                                            <a href="#" class="font-weight-bold"-->
+                            <!--                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">-->
+                            <!--                                            </a>-->
+                            <!--                                        </p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <div class="col-md-4 col-sm-4 pb40">-->
+                            <!--                                <div class="card" style="box-shadow: 0px 0px 10px rgba(187, 175, 177, 1);">-->
+                            <!--                                    <img src="/website_infohensive/static/src/img/blog.png" style="width:100%"/>-->
+                            <!--                                    <div class="pt16 mn_hight"-->
+                            <!--                                         style="background-image: url('/website_infohensive/static/src/img/erp.png');">-->
+                            <!--                                        <h4 class="pl-2 font-weight-bold" style="color: #666565;">Secure Software-->
+                            <!--                                            Ever!-->
+                            <!--                                        </h4>-->
+                            <!--                                        <p class="p_content pl-2" style="color: #747272;">Lorem ipsum dolor sit amet,-->
+                            <!--                                            consetetur-->
+                            <!--                                            sadipscing-->
+                            <!--                                            elitr, sed diam nonumy eirmod-->
+                            <!--                                            tempor invidunt ut labore lorem sit.-->
+                            <!--                                        </p>-->
+                            <!--                                        <p class="pl-2">-->
+                            <!--                                            <a href="#" class="font-weight-bold"-->
+                            <!--                                               style="color: #3c78d8;border-bottom: 1px solid;text-decoration: none;">-->
+                            <!--                                            </a>-->
+                            <!--                                        </p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
                         </div>
                     </div>
                 </section>

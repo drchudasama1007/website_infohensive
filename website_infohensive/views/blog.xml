@@ -40,7 +40,14 @@
                                                         </span>
                                                     </p>
                                                     <p class="p_content pl-2">
-                                                        <t t-esc="blog.subtitle"/>
+                                                        <t t-if="len(blog.subtitle) &gt; 100">
+                                                    <t t-esc="blog.subtitle[:100]"/>
+                                                    ...
+                                                </t>
+                                                <t t-else="">
+                                                    <t t-esc="blog.subtitle"/>
+                                                </t>
+<!--                                                        <t t-esc="blog.subtitle"/>-->
                                                     </p>
                                                     <p class="pl-2">
                                                         <a t-attf-href="/blog/#{blog.blog_id.id}/post/#{blog.id}"
@@ -76,34 +83,34 @@
                                     </p>
                                     <h2 class="mt4">
                                         <a t-att-href="website.social_facebook" t-if="website.social_facebook"
-                                           aria-label="Facebook" title="Facebook">
+                                           aria-label="Facebook" title="Facebook" style="color: #3c78d8;">
                                             <i class="fa fa-facebook-square"/>
                                         </a>
                                         <a t-att-href="website.social_twitter" t-if="website.social_twitter"
-                                           aria-label="Twitter" title="Twitter">
+                                           aria-label="Twitter" title="Twitter" style="color: #3c78d8;">
                                             <i class="fa fa-twitter"/>
                                         </a>
                                         <a t-att-href="website.social_linkedin" t-if="website.social_linkedin"
-                                           aria-label="LinkedIn" title="LinkedIn">
+                                           aria-label="LinkedIn" title="LinkedIn" style="color: #3c78d8;">
                                             <i class="fa fa-linkedin"/>
                                         </a>
                                         <a t-att-href="website.social_youtube" t-if="website.social_youtube"
-                                           aria-label="Youtube" title="Youtube">
+                                           aria-label="Youtube" title="Youtube" style="color: #3c78d8;">
                                             <i class="fa fa-youtube-play"/>
                                         </a>
                                         <a t-att-href="website.social_googleplus" t-if="website.social_googleplus"
-                                           aria-label="Google Plus" title="Google Plus">
+                                           aria-label="Google Plus" title="Google Plus" style="color: #3c78d8;">
                                             <i class="fa fa-google-plus-square"/>
                                         </a>
                                         <a t-att-href="website.social_github" t-if="website.social_github"
-                                           aria-label="Github" title="Github">
+                                           aria-label="Github" title="Github" style="color: #3c78d8;">
                                             <i class="fa fa-github"/>
                                         </a>
                                         <a t-att-href="website.social_instagram" t-if="website.social_instagram"
-                                           aria-label="Instagram" title="Instagram">
+                                           aria-label="Instagram" title="Instagram" style="color: #3c78d8;">
                                             <i class="fa fa-instagram"/>
                                         </a>
-                                        <a t-att-href="'/blog/%s/feed' % (blog.id)" aria-label="RSS" title="RSS">
+                                        <a t-att-href="'/blog/%s/feed' % (blog.id)" aria-label="RSS" title="RSS" style="color: #3c78d8;">
                                             <i class="fa fa-rss-square"/>
                                         </a>
                                     </h2>
@@ -113,7 +120,7 @@
                                     <t t-foreach="blogs" t-as="nav_blog">
                                         <li class="nav-item">
                                             <a t-attf-href="#{blog_url(blog=nav_blog, tag=False, date_begin=False, date_end=False)}"
-                                               t-attf-class="nav-link#{nav_blog.id == blog.id and ' active' or ''}">
+                                               t-attf-class="nav-link#{nav_blog.id == blog.id and ' active' or ''}" style="color: #3c78d8;">
                                                 <span t-field="nav_blog.name"/>
                                             </a>
                                         </li>
@@ -133,7 +140,7 @@
                                         <t t-set='tags' t-value='other_tags'/>
                                     </t>
                                 </section>
-                                <section class="mt32">
+                                <section class="mt32 pb32">
                                     <h4>Archives</h4>
                                     <ul class="nav nav-pills flex-column">
                                         <t t-foreach="nav_list" t-as="year">
@@ -149,7 +156,7 @@
                                                     <li t-if="months['date_begin'] == date" class="nav-item">
                                                         <a role="menuitem" rel="nofollow" t-ignore="True"
                                                            t-attf-href="#{blog_url(date_begin=False, date_end=False)}"
-                                                           class="nav-link active">
+                                                           class="nav-link active" style="color: #3c78d8;">
                                                             <t t-esc="months['month']"/>
                                                             <span class="float-right badge badge-pill"
                                                                   t-esc="months['post_date_count']"/>

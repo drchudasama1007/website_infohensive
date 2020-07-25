@@ -27,4 +27,6 @@ class CustomerPortal(http.Controller):
 class HomePageModifications(Website):
     @http.route('/', type='http', auth="public", website=True)
     def index(self, **kw):
-        return request.render('website_infohensive.home_template', {})
+        blogs = request.env['blog.post'].sudo().search([],limit=3)
+        print("\n\n\n\nblogs================",blogs)
+        return request.render('website_infohensive.home_template', {'blogs':blogs})
