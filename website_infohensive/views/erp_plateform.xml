@@ -1,6 +1,6 @@
 <odoo>
 
-    <!-- ========== ERP Plateform ========== -->
+    <!-- ========== ERP Platform ========== -->
     <template id="erp_plateform_template">
         <t t-call="website.layout">
             <div class="oe_structure erp_platform">
@@ -9,7 +9,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 pt152">
-                                <h1 class="font-weight-bold">ERP Plateform</h1>
+                                <h1 class="font-weight-bold">ERP Platform</h1>
                                 <p class="pt8">Easy to implement Information Security controls into all parts of the
                                     business.
                                 </p>
@@ -25,7 +25,7 @@
                          style="background-image: url('/website_infohensive/static/src/img/erp.png');box-shadow: 1px 1px 8px rgba(172, 175, 177, 1);">
                     <div class="container">
                         <div class="col-md-12 col-md-12">
-                            <h1 class="font-weight-bold pt32 text-center pb16">ERP Plateform</h1>
+                            <h1 class="font-weight-bold pt32 text-center pb16">ERP Platform</h1>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6 erp_ipad pl-0">
@@ -281,7 +281,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 pt32 text-center">
-                                <h1 class="font-weight-bold">ERP Plateform</h1>
+                                <h1 class="font-weight-bold">ERP Platform</h1>
                                 <p class="pt8">Easy to implement Information Security controls into all parts of the
                                     business.
                                 </p>
@@ -296,7 +296,7 @@
                 <section class="pb24" style="background: #f1f1f1">
                     <div class="container">
                         <div class="col-md-12 col-md-12">
-                            <h1 class="font-weight-bold pt32 text-center pb16">ERP Plateform</h1>
+                            <h1 class="font-weight-bold pt32 text-center pb16">ERP Platform</h1>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-6">

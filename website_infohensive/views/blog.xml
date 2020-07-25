@@ -333,4 +333,50 @@
         </xpath>
     </template>
 
+    <template id="website_blog.blog_post_complete" name="Blog Post">
+        <t t-call="website.layout">
+            <div id="wrap" class="js_blog website_blog">
+                <div id="title" class="blog_header" t-ignore="True">
+                    <t t-call="website_blog.blog_cover">
+                        <t t-set="cover_properties" t-value="blog_post_cover_properties"/>
+
+                        <div class="blog_title">
+                            <h1 t-field="blog_post.name" id="blog_post_name" t-att-data-blog-id="blog_post.id"
+                                placeholder="Blog Post Title"/>
+                            <h2 t-field="blog_post.subtitle" placeholder="Subtitle"/>
+                            <p class="post-meta text-muted text-center" name="blog_post_data"/>
+                            <p class="post-meta text-muted text-center" t-if="len(blog_post.tag_ids)">
+                                <span class="fa fa-tags" role="img" aria-label="Tags" title="Tags"/>
+                                <t t-foreach="blog_post.tag_ids" t-as="one_tag">
+                                    <a class="badge badge-primary mr8" t-attf-href="#{blog_url(tag=slug(one_tag))}"
+                                       t-esc="one_tag.name"/>
+                                </t>
+                            </p>
+                            <div t-if="'cover_full' in blog_post_cover_properties.get('resize_class', '')"
+                                 id="blog_angle_down">
+                                <strong>
+                                    <a href="#blog_content" class="fa fa-angle-down fa-3x fa-inverse mt4"
+                                       aria-label="To blog content" title="To blog content"/>
+                                </strong>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+
+                <div id="blog_content" t-field="blog_post.content" class="blog_content mt32"/>
+
+                <div class="o_blog_post_complete o_sharing_links">
+                    <a class="fa fa-twitter-square o_twitter_complete" id="o_twitter_complete" aria-label="Twitter"
+                       title="Twitter"></a>
+                    <a class="fa fa-facebook-square o_facebook_complete" id="o_facebook_complete" aria-label="Facebook"
+                       title="Facebook"></a>
+                    <a class="fa fa-linkedin-square o_linkedin_complete" id="o_linkedin_complete" aria-label="LinkedIn"
+                       title="LinkedIn"></a>
+                    <a class="fa fa-google-plus-square o_google_complete" id="o_google_complete"
+                       aria-label="Google Plus" title="Google Plus"></a>
+                </div>
+            </div>
+        </t>
+    </template>
+
 </odoo>

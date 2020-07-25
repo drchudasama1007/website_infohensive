@@ -14,8 +14,8 @@
                             <p class="pt8 mb0">A highly customisable and easy to use ERP for</p>
                             <p class="mt0 mb0">implementing Information Security Controls baked into all</p>
                             <p class="mt0">parts of the business.</p>
-                            <button class="btn btn-success">Framework</button>
-                            <button class="btn ml-3 text-white" style="background: #684991;">ERP Platform</button>
+                            <button class="btn text-white" style="background: #3c78d8;">Framework</button>
+                            <button class="btn ml-3 text-white" style="background: #3c78d8;">ERP Platform</button>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                     <div class="container">
                         <div class="row pb32">
                             <div class="col-md-12 col-sm-12 text-center">
-                                <h1 class="pt32 mb0 font-weight-bold">ERP Plateform</h1>
+                                <h1 class="pt32 mb0 font-weight-bold">ERP Platform</h1>
                             </div>
                         </div>
                         <div class="row pl-3 pt8 pb8">
@@ -145,7 +145,7 @@
                         </div>
                         <div class="col-md-12 col-md-12 pt16 pb40 text-center">
                             <a type="button" href="/erp-platfrom" class="btn text-white pl-3 pr-3 pt8 pb8 bg-black">
-                                More on ERP Plateform
+                                More on ERP Platform
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
                             </a>
                         </div>
@@ -380,7 +380,7 @@
                     <div class="container">
                         <div class="row pb16">
                             <div class="col-md-12 col-sm-12 text-center">
-                                <h1 class="pt32 mb0 font-weight-bold">ERP Plateform</h1>
+                                <h1 class="pt32 mb0 font-weight-bold">ERP Platform</h1>
                             </div>
                         </div>
                         <div class="row pl-3 pt16 pb16">
@@ -495,7 +495,7 @@
                         </div>
                         <div class="col-md-12 col-md-12 pt16 pb40 text-center">
                             <a type="button" href="/erp-platfrom" class="btn text-white btn-block pl-3 pr-3 pt16 pb16 bg-black" style="font-size: 17px;">
-                                More on ERP Plateform
+                                More on ERP Platform
                                 <i class="fa fa-arrow-circle-o-right text-white pl-2"/>
                             </a>
                         </div>
