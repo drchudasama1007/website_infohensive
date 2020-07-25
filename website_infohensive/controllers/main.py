@@ -24,6 +24,22 @@ class CustomerPortal(http.Controller):
     def erp_platform_page(self, page=0, *args, **kwargs):
         return request.render('website_infohensive.erp_plateform_template', {})
 
+    @http.route(["/contact-us"], type='http', auth="public", website=True)
+    def contact_us_page(self, page=0, *args, **kwargs):
+        print("\n\n\nkw============",kwargs)
+        is_lead = False
+        if kwargs.get('name'):
+            lead = request.env['crm.lead'].sudo().create({
+                'name': kwargs.get('name'),
+                'phone' : kwargs.get('phone'),
+                'email_from' : kwargs.get('email_from'),
+                'description' : kwargs.get('description'),
+            })
+            if lead:
+                is_lead = True
+
+        return request.render('website_infohensive.contactus_page_template', {'is_lead':is_lead})
+
 class HomePageModifications(Website):
     @http.route('/', type='http', auth="public", website=True)
     def index(self, **kw):

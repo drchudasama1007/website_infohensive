@@ -5,8 +5,9 @@
         <xpath expr="//form" position="replace">
         </xpath>
     </template>
-    <template id="contactus_template" inherit_id="website.contactus" name="Contactus">
-        <xpath expr="//div[hasclass('container')]" position="replace">
+    <template id="contactus_page_template" name="Contact us">
+<!--        <xpath expr="//div[hasclass('container')]" position="replace">-->
+        <t t-call="website.layout">
             <div class="oe_structure contactus_desk">
                 <section style="background-image: url('/website_infohensive/static/src/img/app.png');">
                     <div class="container">
@@ -65,24 +66,19 @@
                             </h1>
                             </div>
                         </div>
-                        <form action="/website_form/" method="post" data-model_name="crm.lead"
-                              data-success_page="/contactus-thank-you"
-                              class="s_website_form container-fluid mt32 khadlahj_contactus_form mx-0"
-                              enctype="multipart/form-data"
-                              data-editable-form="false">
+                        <form action="/contact-us" method="post">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                             <div class="form-group row form-field o_website_form_required_custom">
                                 <div class="col-md-6 col-sm-6">
                                     <input type="text" class="form-control o_website_form_input"
-                                           name="contact_name" style="height:45px"
+                                           name="name" style="height:45px"
                                            placeholder="name"
-                                           t-att-value="request.params.get('contact_name', '')"
                                            required="required"/>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <input type="text" class="form-control o_website_form_input"
-                                           name="contact_name" style="height:45px"
+                                           name="phone" style="height:45px"
                                            placeholder="mobile"
-                                           t-att-value="request.params.get('phone', '')"
                                            required="required"/>
                                 </div>
                             </div>
@@ -91,14 +87,14 @@
                                     <input type="text" class="form-control o_website_form_input" name="email_from"
                                            placeholder="corporate email" style="height:45px"
                                            required="required"
-                                           t-att-value="request.params.get('email_from', '')"/>
+                                    />
                                 </div>
                             </div>
                             <div class="form-group row form-field o_website_form_required_custom">
                                 <div class="col-lg-12 col-md-12">
                                     <textarea class="form-control o_website_form_input"
                                               placeholder="your comment or question..." rows="6" name="description"
-                                              required="required"><t t-esc="request.params.get('description', '')"/></textarea>
+                                              required="required"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -152,10 +148,16 @@
                             <div class="form-group row">
                                 <div class="col-lg-12 col-md-12">
                                 <button type="submit" id="businessEnquirySubmit"
-                                       style="padding-left: 30px;padding-right: 30px;"
+                                       style="padding-left: 30px;padding-right: 30px;background: #3c78d8 !important;"
                                        class="btn bg-black submit o_website_form_send">
                                     Send<i class="fa fa-paper-plane pl-2"/>
                                 </button>
+                                    <t t-if="is_lead">
+                                        <div class="alert alert-success mt16" role="status">
+                                            Your message has been sent successfully.
+                                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                        </div>
+                                    </t>
                                 </div>
                             </div>
                         </form>
@@ -218,26 +220,21 @@
                                 Have a question / idea / comment?
                             </h1>
                         </div>
-                        <form action="/website_form/" method="post" data-model_name="crm.lead"
-                              data-success_page="/contactus-thank-you"
-                              class="s_website_form container-fluid mt32 khadlahj_contactus_form mx-0"
-                              enctype="multipart/form-data"
-                              data-editable-form="false">
+                        <form action="/contact-us" method="post">
+                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                             <div class="form-group row form-field o_website_form_required_custom">
                                 <div class="col-md-12 col-sm-12">
                                     <input type="text" class="form-control o_website_form_input"
-                                           name="contact_name" style="height:60px"
+                                           name="name" style="height:60px"
                                            placeholder="name"
-                                           t-att-value="request.params.get('contact_name', '')"
                                            required="required"/>
                                 </div>
                             </div>
                             <div class="form-group row form-field o_website_form_required_custom">
                                 <div class="col-md-12 col-sm-12">
                                     <input type="text" class="form-control o_website_form_input"
-                                           name="contact_name" style="height:60px"
+                                           name="phone" style="height:60px"
                                            placeholder="mobile"
-                                           t-att-value="request.params.get('phone', '')"
                                            required="required"/>
                                 </div>
                             </div>
@@ -245,17 +242,14 @@
                                 <div class="col-lg-12 col-md-12">
                                     <input type="text" class="form-control o_website_form_input" name="email_from"
                                            placeholder="corporate email" style="height:60px"
-                                           required="required"
-                                           t-att-value="request.params.get('email_from', '')"/>
+                                           required="required"/>
                                 </div>
                             </div>
                             <div class="form-group row form-field o_website_form_required_custom">
                                 <div class="col-lg-12 col-md-12">
                                     <textarea class="form-control o_website_form_input"
                                               placeholder="your comment or question..." rows="6" name="description"
-                                              required="required">
-                                        <t t-esc="request.params.get('description', '')"/>
-                                    </textarea>
+                                              required="required"></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -309,11 +303,18 @@
                             <div class="form-group row">
                                 <div class="col-lg-12 col-md-12">
                                 <button type="submit" id="businessEnquirySubmit"
-                                       style="padding-left: 30px;padding-right: 30px;"
+                                       style="padding-left: 30px;padding-right: 30px;background: #3c78d8 !important;"
                                        class="btn bg-black submit o_website_form_send btn-block pt16 pb16">
                                     Send<i class="fa fa-paper-plane pl-2"/>
                                     <!--                                        <i class="fa fa-paper-plane"/>-->
                                 </button>
+
+                                      <t t-if="is_lead">
+                                        <div class="alert alert-success mt16" role="status">
+                                            Your message has been sent successfully.
+                                            <button type="button" class="close" data-dismiss="alert">×</button>
+                                        </div>
+                                    </t>
                                 </div>
                             </div>
 
@@ -321,7 +322,8 @@
                     </div>
                 </section>
             </div>
-        </xpath>
+        </t>
+<!--        </xpath>-->
     </template>
 
 </odoo>
