@@ -15,7 +15,7 @@
                                 <a href="/erp-platform">InfoSec ERP Platform</a>
                             </p>
                             <p>
-                                <a href="#">About</a>
+                                <a href="/contact-us">Contact us</a>
                             </p>
                         </div>
                         <div class="col-md-4 col-sm-4 text-center" style="border-right: 2px solid #f1f1f1;">
@@ -29,18 +29,9 @@
                             <p>email@infohensive.com</p>
                         </div>
                         <div class="col-md-4 col-sm-4 text-right">
-                            <h5 class="pt32 font-weight-bold pb16">Resources</h5>
+                            <h5 class="pt32 font-weight-bold pb16">Company Details</h5>
                             <p>
                                 <a href="/blog">Blog</a>
-                            </p>
-                            <p>
-                                <a href="#">Knowledge Base</a>
-                            </p>
-                            <p>
-                                <a href="#">F&amp;Qs</a>
-                            </p>
-                            <p>
-                                <a href="#">Support</a>
                             </p>
                         </div>
                     </div>
@@ -57,9 +48,15 @@
                     <div class="row">
                         <div class="col-sm-12 col-12 pt16">
                             <h4 class="font-weight-bold pb16 pt32">Our Platform</h4>
-                            <p>Framework</p>
-                            <p>InfoSec ERP Platform</p>
-                            <p>About</p>
+                            <p>
+                                <a href="/framework">Framework</a>
+                            </p>
+                            <p>
+                                <a href="/erp-platform">InfoSec ERP Platform</a>
+                            </p>
+                            <p>
+                                <a href="/contactus">Contact us</a>
+                            </p>
                         </div>
                         <div class="col-sm-12 col-12 pt32">
                             <h4 class="font-weight-bold pb16">Our Office Address</h4>
@@ -68,11 +65,10 @@
                             <p>email@infohensive.com</p>
                         </div>
                         <div class="col-sm-12 col-12">
-                            <h4 class="pt32 font-weight-bold pb16">Resources</h4>
-                            <p>Blog</p>
-                            <p>Knowledge Base</p>
-                            <p>F&amp;Qs</p>
-                            <p>Support</p>
+                            <h4 class="pt32 font-weight-bold pb16">Company Details</h4>
+                            <p>
+                                <a href="/blog">Blog</a>
+                            </p>
                         </div>
                     </div>
                 </div>

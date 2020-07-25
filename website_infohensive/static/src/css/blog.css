@@ -29,45 +29,20 @@
 .blog .blog_4 .blog_4_btn{
     background: #f1f1f1;
 }
-
-/* ---------mobile blog css--------- */
-
-@media (max-width: 767px) {
-    .blog{
-        display: none !important;
-    }
-    .blog-phone{
-        display: block !important;
-    }
-    .blog-phone .blog_8 h4{
-        color: #666565;
-    }
-    .blog-phone .blog_8 p.p_content{
-        font-size: 15px;
-        color: #747272;
-    }
-    .blog-phone .blog_8 p.p_i{
-        color: #747272;
-    }
-    .blog-phone .blog_4 input {
-        display: block;
-        border: 1px solid #000;
-    }
-    .blog-phone .blog_4 input[type=search] {
-        width: 100%;
-        padding: 10px;
-        border-radius: 4px;
-        border: 1px solid #d8d5d5;
-    }
-    .blog-phone .blog_4 .fa-search{
-        position: absolute;
-        top: 13px;
-        right: 20px;
-        color: #747272;
-    }
-    .blog-phone .blog_4 .blog_4_btn{
-        background: #f1f1f1;
-    }
+.btn-primary, .btn-primary:hover {
+    background-color: #3c78d8;
+}
+.blog_tags ul li a span, .blog_tags ul li a span:hover{
+    color: #3c78d8;
+}
+.nav-pills.flex-column li a, .nav-pills.flex-column li a:hover{
+    color: #3c78d8;
+}
+.font_blog ul li a{
+    font-weight: bold;
+}
+.social_media i{
+    padding-right: 0.8rem !important;
 }
 
 .js_follow > button{
