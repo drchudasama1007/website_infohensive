@@ -1,8 +1,12 @@
 <odoo>
 
     <!-- ========== Contact Us ========== -->
+    <template id="info_contactus" inherit_id="website_crm.contactus_form">
+        <xpath expr="//form" position="replace">
+        </xpath>
+    </template>
     <template id="contactus_template" inherit_id="website.contactus" name="Contactus">
-        <xpath expr="//div[@id='wrap']" position="replace">
+        <xpath expr="//div[hasclass('container')]" position="replace">
             <div class="oe_structure contactus_desk">
                 <section style="background-image: url('/website_infohensive/static/src/img/app.png');">
                     <div class="container">
@@ -70,15 +74,15 @@
                                 <div class="col-md-6 col-sm-6">
                                     <input type="text" class="form-control o_website_form_input"
                                            name="contact_name" style="height:45px"
-                                           placeholder="first name"
+                                           placeholder="name"
                                            t-att-value="request.params.get('contact_name', '')"
                                            required="required"/>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <input type="text" class="form-control o_website_form_input"
                                            name="contact_name" style="height:45px"
-                                           placeholder="last name"
-                                           t-att-value="request.params.get('contact_name', '')"
+                                           placeholder="mobile"
+                                           t-att-value="request.params.get('phone', '')"
                                            required="required"/>
                                 </div>
                             </div>
@@ -88,20 +92,6 @@
                                            placeholder="corporate email" style="height:45px"
                                            required="required"
                                            t-att-value="request.params.get('email_from', '')"/>
-                                </div>
-                            </div>
-                            <div class="form-group row form-field o_website_form_required_custom">
-                                <div class="col-md-6 col-sm-6">
-                                    <input type="text" class="form-control o_website_form_input"
-                                           name="organization" style="height:45px"
-                                           placeholder="organization"
-                                           required="required"/>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <input type="text" class="form-control o_website_form_input"
-                                           name="country" style="height:45px"
-                                           placeholder="country"
-                                           required="required"/>
                                 </div>
                             </div>
                             <div class="form-group row form-field o_website_form_required_custom">
@@ -168,7 +158,6 @@
                                 </button>
                                 </div>
                             </div>
-
                         </form>
                     </div>
                 </section>
@@ -238,7 +227,7 @@
                                 <div class="col-md-12 col-sm-12">
                                     <input type="text" class="form-control o_website_form_input"
                                            name="contact_name" style="height:60px"
-                                           placeholder="first name"
+                                           placeholder="name"
                                            t-att-value="request.params.get('contact_name', '')"
                                            required="required"/>
                                 </div>
@@ -247,8 +236,8 @@
                                 <div class="col-md-12 col-sm-12">
                                     <input type="text" class="form-control o_website_form_input"
                                            name="contact_name" style="height:60px"
-                                           placeholder="last name"
-                                           t-att-value="request.params.get('contact_name', '')"
+                                           placeholder="mobile"
+                                           t-att-value="request.params.get('phone', '')"
                                            required="required"/>
                                 </div>
                             </div>
@@ -258,22 +247,6 @@
                                            placeholder="corporate email" style="height:60px"
                                            required="required"
                                            t-att-value="request.params.get('email_from', '')"/>
-                                </div>
-                            </div>
-                            <div class="form-group row form-field o_website_form_required_custom">
-                                <div class="col-md-12 col-sm-12">
-                                    <input type="text" class="form-control o_website_form_input"
-                                           name="organization" style="height:60px"
-                                           placeholder="organization"
-                                           required="required"/>
-                                </div>
-                            </div>
-                            <div class="form-group row form-field o_website_form_required_custom">
-                                <div class="col-md-12 col-sm-12">
-                                    <input type="text" class="form-control o_website_form_input"
-                                           name="country" style="height:60px"
-                                           placeholder="country"
-                                           required="required"/>
                                 </div>
                             </div>
                             <div class="form-group row form-field o_website_form_required_custom">
